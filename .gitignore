@@ -1,0 +1,39 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+system/output/
+
+# Jekyll build output
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Private working notes. This repo will go public, and git history keeps
+# everything ever committed, so internal notes never enter it.
+CONTENT_TODO.md
+
+# Diagram tooling leaves screenshots and receipts next to the delivered HTML
+*visual-check*
+
+# Diagrams dropped on purpose: the files stay on disk, out of the repo
+docs/diagrams/phantom-excess.html
+docs/diagrams/seasonality-backtest.html
+docs/images/diagrams/phantom-excess*.png
+docs/images/diagrams/seasonality-backtest*.png
+
+# Never commit data or secrets
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+*.parquet
+.env
+.env.*
+*.key
+*.pem

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {% endif %}Jay Sejun Song</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<meta name="author" content="Jay Sejun Song">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}Jay Sejun Song">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23131816'/%3E%3Cpath d='M9 8v16M23 8v16' stroke='%23EDF0EE' stroke-width='2.5'/%3E%3Cpath d='M9 16h14' stroke='%23EDF0EE' stroke-width='1.5' stroke-dasharray='2.5 2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="{{ '/css/site.css' | relative_url }}">
+<script>
+  try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="topbar">
+    <a class="label" href="{{ '/' | relative_url }}">Jay Sejun Song</a>
+    <nav class="nav">
+      <a class="label" href="{{ '/work/' | relative_url }}">Work</a>
+      <a class="label" href="{{ '/how-i-work' | relative_url }}">How I work</a>
+      <a class="label" href="https://github.com/yss2333/jay-supply-chain-ai-portfolio/tree/main/system">Run the system</a>
+      <a class="label" href="{{ '/about' | relative_url }}">About</a>
+      <a class="label" href="mailto:jaysejunsong@gmail.com">Contact</a>
+      <button class="theme-toggle" type="button" aria-label="Switch between light and dark theme"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.4"></circle><path d="M8 1.5a6.5 6.5 0 0 0 0 13z" fill="currentColor"></path></svg></button>
+    </nav>
+  </header>
+
+  <main class="article">
+{{ content }}
+  </main>
+
+  <footer>
+    <p class="prov">Figures carry the definition they were measured under. Accounts are named where the work described is my own planning, and left as a type where the number belongs to the customer. Raw order and sales data, customer contract terms, system credentials and internal identifiers stay out. &middot; <a href="https://www.linkedin.com/in/jay-sejun-song">LinkedIn</a> &middot; <a href="https://github.com/yss2333">GitHub</a></p>
+  </footer>
+
+</div>
+<script>
+  document.querySelector('.theme-toggle').addEventListener('click', () => {
+    const root = document.documentElement;
+    const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+  });
+</script>
+<script type="module">
+  // Render ```mermaid blocks (GitHub renders them natively; Jekyll needs this).
+  const blocks = document.querySelectorAll('div.language-mermaid, pre > code.language-mermaid');
+  if (blocks.length) {
+    const { default: mermaid } = await import('https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs');
+    blocks.forEach((el) => {
+      const host = el.tagName === 'CODE' ? el.parentElement : el;
+      const d = document.createElement('div');
+      d.className = 'mermaid';
+      d.textContent = el.textContent;
+      host.replaceWith(d);
+    });
+    const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+    mermaid.initialize({ startOnLoad: false, theme: dark ? 'dark' : 'neutral', fontFamily: 'IBM Plex Mono, ui-monospace, monospace' });
+    await mermaid.run();
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+mcp>=1.2          # the tool server for Claude Code
+jupyterlab>=4.0   # the notebooks
+# optional: lets `--llm` ask a model to refute
+# anthropic>=0.40

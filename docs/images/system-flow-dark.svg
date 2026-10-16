@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 486" width="1024" height="486" role="img" aria-label="Signals feed a seasonality layer and a rule engine; flagged items go to an investigator agent, then a refuter agent, then a planner. New items get a starting curve from a vision model that reads each item's color. The output is the forecast file, as the demand input to S&amp;OP.">
+<rect width="1024" height="486" fill="#121614"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#8E9995"/></marker></defs>
+<rect x="18" y="20" width="220" height="146" rx="5" fill="#121614" stroke="#3A423F" stroke-width="1.3"/>
+<text x="36" y="50" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="600" letter-spacing="0.7" fill="#EAEEEB">SIGNALS</text>
+<text x="36" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">point-of-sale</text>
+<text x="36" y="100" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">store in-stock</text>
+<text x="36" y="122" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">shipments, orders</text>
+<text x="36" y="144" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">rankings, stock</text>
+<line x1="238" y1="93" x2="268" y2="93" stroke="#8E9995" stroke-width="1.4" marker-end="url(#a)"/>
+<rect x="274" y="20" width="220" height="146" rx="5" fill="#121614" stroke="#3A423F" stroke-width="1.3"/>
+<text x="292" y="50" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="600" letter-spacing="0.7" fill="#EAEEEB">SEASONALITY</text>
+<text x="292" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">store-normalized</text>
+<text x="292" y="100" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">index, shrunk</text>
+<text x="292" y="122" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">toward the</text>
+<text x="292" y="144" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">segment curve</text>
+<line x1="494" y1="93" x2="524" y2="93" stroke="#8E9995" stroke-width="1.4" marker-end="url(#a)"/>
+<rect x="530" y="20" width="220" height="146" rx="5" fill="#1A1F1D" stroke="#7EB6C7" stroke-width="1.8"/>
+<text x="548" y="50" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="600" letter-spacing="0.7" fill="#EAEEEB">RULE ENGINE</text>
+<text x="548" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">~30 guardrails</text>
+<text x="548" y="100" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">RAISE, LOWER</text>
+<text x="548" y="122" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">HOLD, OK</text>
+<text x="548" y="144" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">asymmetric caps</text>
+<line x1="750" y1="93" x2="780" y2="93" stroke="#8E9995" stroke-width="1.4" marker-end="url(#a)"/>
+<rect x="786" y="20" width="220" height="146" rx="5" fill="#121614" stroke="#3A423F" stroke-width="1.3"/>
+<text x="804" y="50" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="600" letter-spacing="0.7" fill="#EAEEEB">INVESTIGATOR</text>
+<text x="804" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">agent digs into</text>
+<text x="804" y="100" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">each flagged item</text>
+<text x="804" y="122" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">across every</text>
+<text x="804" y="144" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">signal</text>
+<rect x="18" y="314" width="220" height="146" rx="5" fill="#1A1F1D" stroke="#7EB6C7" stroke-width="1.8"/>
+<text x="36" y="344" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="600" letter-spacing="0.7" fill="#EAEEEB">REFUTER</text>
+<text x="36" y="372" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">a separate agent</text>
+<text x="36" y="394" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">told only to</text>
+<text x="36" y="416" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">disprove the</text>
+<text x="36" y="438" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">finding</text>
+<line x1="238" y1="387" x2="268" y2="387" stroke="#8E9995" stroke-width="1.4" marker-end="url(#a)"/>
+<rect x="274" y="314" width="220" height="146" rx="5" fill="#121614" stroke="#3A423F" stroke-width="1.3"/>
+<text x="292" y="344" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="600" letter-spacing="0.7" fill="#EAEEEB">PLANNER</text>
+<text x="292" y="372" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">reviews what</text>
+<text x="292" y="394" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">survives,</text>
+<text x="292" y="416" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">~30 minutes,</text>
+<text x="292" y="438" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">final call</text>
+<path d="M896 166 V292 H128 V308" fill="none" stroke="#8E9995" stroke-width="1.4" marker-end="url(#a)"/>
+<rect x="274" y="186" width="220" height="82" rx="5" fill="none" stroke="#3A423F" stroke-width="1.3" stroke-dasharray="5 4"/>
+<text x="292" y="214" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="600" letter-spacing="0.7" fill="#EAEEEB">NEW ITEMS</text>
+<text x="292" y="238" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">vision model reads</text>
+<text x="292" y="258" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#8E9995">item color</text>
+<line x1="384" y1="186" x2="384" y2="172" stroke="#8E9995" stroke-width="1.4" marker-end="url(#a)"/>
+</svg>

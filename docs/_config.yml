@@ -1,0 +1,22 @@
+title: Jay Sejun Song
+description: >-
+  Supply chain analytics and applied AI. Demand forecasting systems for 20+ retail
+  accounts, and the validation process that decides whether their numbers are real.
+lang: en
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+# Pages without front matter still get the site layout.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - CONTENT_TODO.md
+  - .gitignore

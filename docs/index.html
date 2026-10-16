@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jay Sejun Song — Supply Chain Analytics &amp; Applied AI</title>
+<meta name="description" content="Demand planning and applied AI for 20+ retail accounts across the US, Canada and Europe. An agentic AI planning system that nearly halved weighted forecast error in backtests, and the validation process that decides whether its numbers are real.">
+<meta name="author" content="Jay Sejun Song">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jay Sejun Song — Supply Chain Analytics &amp; Applied AI">
+<meta property="og:description" content="Forecast error nearly halved in backtests. The hard part was proving it.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jay Sejun Song — Supply Chain Analytics &amp; Applied AI">
+<meta name="twitter:description" content="Forecast error nearly halved in backtests. The hard part was proving it.">
+<meta name="theme-color" content="#EDF0EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121614" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23131816'/%3E%3Cpath d='M9 8v16M23 8v16' stroke='%23EDF0EE' stroke-width='2.5'/%3E%3Cpath d='M9 16h14' stroke='%23EDF0EE' stroke-width='1.5' stroke-dasharray='2.5 2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<script>
+  // Apply a saved theme before first paint, so the page never flashes the wrong one.
+  try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jay Sejun Song",
+  "jobTitle": "Supply Chain Analyst, Analytics & AI",
+  "worksFor": {"@type": "Organization", "name": "Kiss Beauty Group, Inc."},
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "The Pennsylvania State University"},
+  "email": "mailto:jaysejunsong@gmail.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/jay-sejun-song",
+    "https://github.com/yss2333"
+  ],
+  "knowsAbout": ["Demand forecasting", "Supply chain analytics", "Forecast validation", "Inventory planning", "Multi-agent LLM systems"]
+}
+</script>
+</head>
+<body>
+
+<nav class="topnav" aria-label="Site">
+  <div class="topnav-in">
+    <a class="brand" href="./">Jay Sejun Song</a>
+    <div class="topnav-links">
+      <a href="./#proof">Proof</a>
+      <a href="./#start">Start here</a>
+      <a href="work/">Work</a>
+      <a href="how-i-work.html">How I work</a>
+      <a href="https://github.com/yss2333/jay-supply-chain-ai-portfolio/tree/main/system">Run the system</a>
+      <a href="about.html">About</a>
+    </div>
+    <button class="theme-toggle" type="button" aria-label="Switch between light and dark theme"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.4"></circle><path d="M8 1.5a6.5 6.5 0 0 0 0 13z" fill="currentColor"></path></svg></button>
+  </div>
+</nav>
+
+<div class="sheet" id="top">
+
+<header class="hero">
+  <div class="eyebrow">
+    <span class="label">Jay Sejun Song</span>
+    <span class="label">Supply chain analytics &amp; applied AI</span>
+    <span class="label">CPG beauty &middot; US / Canada / Europe</span>
+  </div>
+
+  <h1>I am a demand planner who builds the forecasting systems I plan with.</h1>
+
+  <p class="lede">In backtests on our eight major accounts, we nearly halved weighted forecast error, in a system that now reviews 20+. Since it went live, the share of sales orders backordered for planning reasons is down 36%.</p>
+
+  <p class="subhead">I have planned demand at Kiss Beauty Group since January 2024. I started with six US and UK accounts, and today I cover <span class="val">20+</span> retail accounts across the US, Canada and Europe, about <span class="val">1,400</span> nail SKUs. I run the weekly review, and I co-built the system that runs it. My part was the agent architecture, the business rules and guardrails, the data integration, and the MCP server the agents run on.</p>
+
+  <div class="cta">
+    <a class="btn btn-primary" href="https://github.com/yss2333/jay-supply-chain-ai-portfolio/tree/main/system">Run the system &rarr;</a>
+    <a class="btn" href="work/">All work</a>
+    <a class="btn" href="https://www.linkedin.com/in/jay-sejun-song">LinkedIn</a>
+    <a class="btn" href="mailto:jaysejunsong@gmail.com">Email</a>
+  </div>
+  <p class="updated label">Updated October 2026</p>
+</header>
+
+<!-- ============ PROOF ============ -->
+<section id="proof">
+  <div class="sec-head">
+    <span class="label">Proof</span>
+    <h2>What changed, and how it was measured</h2>
+  </div>
+
+  <div class="stats">
+    <article class="stat stat-lead">
+      <div class="figure">35&ndash;45% &rarr; 18&ndash;25%</div>
+      <p class="means">Weighted forecast error, nearly halved in backtests. Fewer items ordered short, fewer ordered into a warehouse nobody was going to draw from.</p>
+      <div class="range" role="img" aria-label="Weighted forecast error before the system was a band from 35 to 45 percent; after, a band from 18 to 25 percent, on a scale from 0 to 60 percent.">
+        <div class="range-row">
+          <span class="range-lab">Before &middot; previous process</span>
+          <span class="range-track"><span class="range-band is-before" style="--from:35;--to:45"></span><span class="range-val" style="--at:45">35&ndash;45%</span></span>
+        </div>
+        <div class="range-row">
+          <span class="range-lab">After &middot; 2026 Q1</span>
+          <span class="range-track"><span class="range-band is-after" style="--from:18;--to:25"></span><span class="range-val" style="--at:25">18&ndash;25%</span></span>
+        </div>
+        <div class="range-row range-axis-row">
+          <span></span>
+          <span class="range-axis"><span style="--at:0">0%</span><span style="--at:20">20%</span><span style="--at:40">40%</span><span style="--at:60">60%</span></span>
+        </div>
+      </div>
+      <p class="range-note prov">Drawn as ranges because it is a range: the spread across retailers. Collapsing it to a single number would read better and mean less.</p>
+      <details>
+        <summary>How it was measured</summary>
+        <p class="prov">WMAPE, volume-weighted by shipment units &middot; &Sigma;|actual &minus; forecast| &divide; &Sigma;|actual| &middot; our eight major domestic accounts, by retailer &middot; existing items &middot; 2026 Q1, validated on a six-month rolling backtest &middot; the range is the spread across retailers</p>
+      </details>
+    </article>
+
+    <article class="stat">
+      <div class="figure">1 region &rarr; 3</div>
+      <p class="means">Every account in every region now reviewed weekly, filling a capacity gap without a new hire. The number I would defend hardest: it needs no denominator.</p>
+      <details>
+        <summary>How it was measured</summary>
+        <p class="prov">Review throughput &asymp;4&times; (monthly &rarr; weekly) &middot; the US, Canada and Europe &middot; Canada and Europe previously monthly or not reviewed</p>
+      </details>
+    </article>
+
+    <article class="stat">
+      <div class="figure">5 h &rarr; 2 h</div>
+      <p class="means">Weekly forecast review, per account. The system proposes and defends a call on every item; a planner reviews the flagged ones.</p>
+      <details>
+        <summary>How it was measured</summary>
+        <p class="prov">&asymp;60% less time per account review &middot; &asymp;3,100 hrs/yr of capacity across the team (&asymp;1.5 FTE): 3 hours a week &times; 20 accounts &times; 52 weeks &middot; an estimate of what a weekly review of every account would have cost, since Canada and Europe were reviewed monthly or skipped before</p>
+      </details>
+    </article>
+
+    <article class="stat">
+      <div class="figure">&minus;$26,517 / yr</div>
+      <p class="means">The third-party forecasting platform we used to pay for is retired. Net of the in-house system that replaced it, recurring software cost fell 88%.</p>
+      <details>
+        <summary>How it was measured</summary>
+        <p class="prov">$30,117/yr license retired &minus; $3,600/yr for the in-house system &middot; a realized saving, not a modeled one</p>
+      </details>
+    </article>
+
+    <article class="stat">
+      <div class="figure">4 divisions</div>
+      <p class="means">Handed to three other product divisions (lash, cosmetics and appliances); 15+ purchasing and supply-chain users across all four now run it weekly on their own accounts. Each team changes its own rules in a plain-language file, so a new team goes live in days, not a rebuild.</p>
+      <details>
+        <summary>How it was measured</summary>
+        <p class="prov">nail, lash, cosmetics and appliances &middot; I set up each team's environment, connected it to the team's own data, ran the training sessions and stayed until the team ran it on its own &middot; 15+ is the combined size of the purchasing and supply-chain teams that use it, not a login count</p>
+      </details>
+    </article>
+
+    <article class="stat">
+      <div class="figure">&minus;36%</div>
+      <p class="means">Planning-related backorders: the share of sales orders we could not fill for planning reasons, from January to October, before and after the system went live.</p>
+      <details>
+        <summary>How it was measured</summary>
+        <p class="prov">backordered order value tagged with planning or procurement reason codes &divide; all sales-order value &middot; January&ndash;October 2025 against January&ndash;October 2026 &middot; the system went live in January 2026 &middot; procurement codes sit in the same measure, so I do not claim all of the drop</p>
+      </details>
+    </article>
+
+    <article class="stat">
+      <div class="figure">84% &rarr; 98%</div>
+      <p class="means">On-time in-full on a retailer's own vendor scorecard, within six months, with late and short penalties down 31% year over year through the first quarter. Short stock went to complete orders in priority order, not split thin across all of them.</p>
+      <details>
+        <summary>How it was measured</summary>
+        <p class="prov">scored per purchase order by the retailer, not by us &middot; allocation across 20+ retail accounts since Q3 2025 &middot; unit fill rate was already about 99%, so the gain came from where short stock went, not from holding more &middot; the same approach took a second major retailer's fill rate from the mid-80s to the high-90s and held it there for eight months &middot; read next to <a href="work/inventory-health-reporting.html">excess and aging stock</a></p>
+      </details>
+    </article>
+  </div>
+</section>
+
+<!-- ============ START HERE ============ -->
+<section id="start">
+  <div class="sec-head">
+    <span class="label">Start here</span>
+    <h2>Three pieces, if you only read three</h2>
+  </div>
+
+  <div class="picks">
+    <a class="pick" href="work/forecasting-system.html">
+      <span class="label">The system</span>
+      <h3>Forecast error nearly halved in backtests, and three regions reviewed weekly</h3>
+      <p>A seasonality layer, a rule engine with asymmetric guardrails, and an agent that argues with its own findings. What each piece does, and why it sits where it does.</p>
+      <span class="read">Read the write-up &rarr;</span>
+    </a>
+    <a class="pick" href="work/exception-based-planning.html">
+      <span class="label">Operating model</span>
+      <h3>What the weekly job became: monthly to weekly, by exception</h3>
+      <p>Rules settle what they can, a separate agent tries to disprove every flagged call against the raw data, and a planner spends the week on what the rules could not settle.</p>
+      <span class="read">Read the write-up &rarr;</span>
+    </a>
+    <a class="pick" href="work/allocation.html">
+      <span class="label">Service level</span>
+      <h3>On-time in-full from 84% to 98%, without adding inventory</h3>
+      <p>Short stock went to complete orders in priority order instead of being split thin. The same approach took a second major retailer's fill rate from the mid-80s to the high-90s.</p>
+      <span class="read">Read the write-up &rarr;</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ THE SYSTEM ============ -->
+<section id="system">
+  <div class="sec-head">
+    <span class="label">The system</span>
+    <h2>What runs the weekly review</h2>
+  </div>
+
+  <figure class="flow">
+    <div class="scroll">
+      <svg viewBox="0 0 962 210" width="962" role="img" aria-label="System flow: signals feed a seasonality layer and a rule engine; flagged items go to an investigator agent, then a refuter agent, then a planner; the output is the forecast file, as an input to S&amp;OP.">
+        <defs>
+          <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="var(--graphite)"></path></marker>
+        </defs>
+        <g class="sv-node"><rect x="0" y="20" width="140" height="96"></rect>
+          <text x="12" y="42" class="sv-lab-ink">SIGNALS</text>
+          <text x="12" y="62" class="sv-lab">point-of-sale</text><text x="12" y="77" class="sv-lab">store in-stock</text>
+          <text x="12" y="92" class="sv-lab">shipments &amp; orders</text><text x="12" y="107" class="sv-lab">rankings &middot; stock</text></g>
+        <g class="sv-node"><rect x="164" y="20" width="140" height="96"></rect>
+          <text x="176" y="42" class="sv-lab-ink">SEASONALITY</text>
+          <text x="176" y="62" class="sv-lab">store-normalized</text><text x="176" y="77" class="sv-lab">index, shrunk</text>
+          <text x="176" y="92" class="sv-lab">toward the</text><text x="176" y="107" class="sv-lab">segment curve</text></g>
+        <g class="sv-node sv-node-key"><rect x="328" y="20" width="140" height="96"></rect>
+          <text x="340" y="42" class="sv-lab-ink">RULE ENGINE</text>
+          <text x="340" y="62" class="sv-lab">~30 guardrails</text><text x="340" y="77" class="sv-lab">RAISE &middot; LOWER</text>
+          <text x="340" y="92" class="sv-lab">HOLD &middot; OK</text><text x="340" y="107" class="sv-lab">asymmetric caps</text></g>
+        <g class="sv-node"><rect x="492" y="20" width="140" height="96"></rect>
+          <text x="504" y="42" class="sv-lab-ink">INVESTIGATOR</text>
+          <text x="504" y="62" class="sv-lab">agent digs into</text><text x="504" y="77" class="sv-lab">each flagged item</text>
+          <text x="504" y="92" class="sv-lab">across every</text><text x="504" y="107" class="sv-lab">signal</text></g>
+        <g class="sv-node sv-node-key"><rect x="656" y="20" width="140" height="96"></rect>
+          <text x="668" y="42" class="sv-lab-ink">REFUTER</text>
+          <text x="668" y="62" class="sv-lab">a separate agent</text><text x="668" y="77" class="sv-lab">told only to</text>
+          <text x="668" y="92" class="sv-lab">disprove the</text><text x="668" y="107" class="sv-lab">finding</text></g>
+        <g class="sv-node"><rect x="820" y="20" width="140" height="96"></rect>
+          <text x="832" y="42" class="sv-lab-ink">PLANNER</text>
+          <text x="832" y="62" class="sv-lab">reviews what</text><text x="832" y="77" class="sv-lab">survives,</text>
+          <text x="832" y="92" class="sv-lab">~30 minutes,</text><text x="832" y="107" class="sv-lab">final call</text></g>
+        <line x1="140" y1="68" x2="162" y2="68" class="sv-arrow" marker-end="url(#arr)"></line>
+        <line x1="304" y1="68" x2="326" y2="68" class="sv-arrow" marker-end="url(#arr)"></line>
+        <line x1="468" y1="68" x2="490" y2="68" class="sv-arrow" marker-end="url(#arr)"></line>
+        <line x1="632" y1="68" x2="654" y2="68" class="sv-arrow" marker-end="url(#arr)"></line>
+        <line x1="796" y1="68" x2="818" y2="68" class="sv-arrow" marker-end="url(#arr)"></line>
+        <g class="sv-node sv-node-dash"><rect x="164" y="146" width="212" height="44"></rect>
+          <text x="176" y="164" class="sv-lab-ink">NEW ITEMS</text><text x="176" y="180" class="sv-lab">vision model reads item color</text></g>
+        <line x1="234" y1="146" x2="234" y2="118" class="sv-arrow" marker-end="url(#arr)"></line>
+        <text x="960" y="146" class="sv-lab" text-anchor="end">&rarr; the forecast file, as an input to S&amp;OP</text>
+        <text x="960" y="164" class="sv-lab" text-anchor="end">shaded: the two roles that decide what does not ship</text>
+      </svg>
+    </div>
+    <ol class="flow-list" aria-label="System flow, top to bottom">
+      <li><b>Signals</b><span>point-of-sale &middot; store in-stock &middot; shipments &amp; orders &middot; rankings &middot; stock</span></li>
+      <li><b>Seasonality</b><span>store-normalized index, shrunk toward the segment curve</span><span class="flow-side">new items: a vision model reads each item's color for a starting curve</span></li>
+      <li class="is-key"><b>Rule engine</b><span>~30 guardrails &middot; RAISE &middot; LOWER &middot; HOLD &middot; OK &middot; asymmetric caps</span></li>
+      <li><b>Investigator</b><span>an agent digs into each flagged item across every signal</span></li>
+      <li class="is-key"><b>Refuter</b><span>a separate agent told only to disprove the finding</span></li>
+      <li><b>Planner</b><span>reviews what survives, ~30 minutes, final call</span></li>
+    </ol>
+    <p class="flow-out prov">&rarr; the forecast file, as an input to S&amp;OP &middot; shaded: the two roles that decide what does not ship</p>
+  </figure>
+
+  <div class="prose">
+    <p>Signals in, a seasonality layer, a rule engine with about thirty guardrails, an agent that investigates what the rules flag, and a second agent whose only instruction is to refute it. A planner reviews what survives, in roughly thirty minutes. The two ways a forecast can be wrong are not symmetric, so cutting and raising follow deliberately different rules.</p>
+    <p><a href="work/forecasting-system.html">The full write-up</a> covers the architecture and the results. <a href="how-i-work.html">How I work</a> covers the gate every change goes through. A <a href="https://github.com/yss2333/jay-supply-chain-ai-portfolio/tree/main/system">clean-room version</a> runs the same design on synthetic data, and every rule described on this site is one of its unit tests.</p>
+    <p>Explore it interactively: <a href="diagrams/system-map.html">the clean-room system map</a> and <a href="diagrams/review-decision.html">how one item is decided</a>. Each opens with guided views; press <kbd>P</kbd> to play them.</p>
+  </div>
+
+  <div class="gallery">
+    <span class="label">What the clean-room version produces &middot; all of it on synthetic data</span>
+    <div class="gal-grid">
+      <figure><img src="images/system/planted_scenarios.png" alt="Six planted scenarios and the action the review returned for each." loading="lazy" width="2036" height="1163"><figcaption><b>Six planted scenarios.</b> A supply gap, a promotion sitting in the baseline, a bulk order, a new item. Each one tests a single rule, and the expected verdict is written down before the run.</figcaption></figure>
+      <figure><img src="images/system/backtest.png" alt="Backtest comparing naive, flat and seasonal forecast error by retailer." loading="lazy" width="1653" height="721"><figcaption><b>A pre-registered backtest.</b> The seasonal curve is adopted only where it beats flat by a margin fixed in advance &mdash; which is not everywhere.</figcaption></figure>
+      <figure><img src="images/system/excess_tiers.png" alt="Stock value by tier, with and without the date-filter bug." loading="lazy" width="1689" height="589"><figcaption><b>The same stock, two answers.</b> What one date rule does to reported excess, and why the report had to be rebuilt before anyone acted on it.</figcaption></figure>
+      <figure><img src="images/system/leak_fingerprint.png" alt="Share of forecasts landing within five percent of actual, leaked model versus clean model." loading="lazy" width="1783" height="622"><figcaption><b>A leak has a fingerprint.</b> How often a forecast lands within 5% of actual. A model that knows the answer is too accurate in a way honest models never are.</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="notebooks">
+    <span class="label">Run it yourself &middot; six Jupyter notebooks, synthetic data</span>
+    <ol>
+      <li><a href="https://github.com/yss2333/jay-supply-chain-ai-portfolio/blob/main/system/notebooks/01_weekly_review.ipynb">Weekly review</a><span class="prov">signals, rules, scouts, the refuter, the revised plan</span></li>
+      <li><a href="https://github.com/yss2333/jay-supply-chain-ai-portfolio/blob/main/system/notebooks/02_validation.ipynb">Validation</a><span class="prov">unit, backtest against naive, regression, shadow</span></li>
+      <li><a href="https://github.com/yss2333/jay-supply-chain-ai-portfolio/blob/main/system/notebooks/03_excess_and_aging.ipynb">Excess and aging</a><span class="prov">the date rule that invented excess</span></li>
+      <li><a href="https://github.com/yss2333/jay-supply-chain-ai-portfolio/blob/main/system/notebooks/04_supply_plan_horizon.ipynb">Supply-plan horizons</a><span class="prov">the freshest plan misses most</span></li>
+      <li><a href="https://github.com/yss2333/jay-supply-chain-ai-portfolio/blob/main/system/notebooks/05_coverage_and_routing.ipynb">Coverage and routing</a><span class="prov">one number, two decisions</span></li>
+      <li><a href="https://github.com/yss2333/jay-supply-chain-ai-portfolio/blob/main/system/notebooks/06_leakage_gate.ipynb">Leakage gate</a><span class="prov">a forecast that looks too good</span></li>
+    </ol>
+  </div>
+
+</section>
+
+<!-- ============ HOW I WORK ============ -->
+<section id="how">
+  <div class="sec-head">
+    <span class="label">How I work</span>
+    <h2>How I decide a number is real</h2>
+  </div>
+
+  <div class="ladder">
+    <div class="rung"><div class="q">UNIT</div><p>Does the change do what I intended? Checked by hand, offline, before it touches data.</p></div>
+    <div class="rung"><div class="q">BACKTEST</div><p>Is it actually more accurate? Against a period the model cannot see, and against a naive forecast. Mandatory whenever a threshold is being set.</p></div>
+    <div class="rung"><div class="q">REGRESSION</div><p>Did it break anything else? Same data, before and after; only the differences I intended.</p></div>
+    <div class="rung"><div class="q">SHADOW</div><p>Should it ship? Beside the live system, on real weeks, with nothing downstream connected.</p></div>
+  </div>
+
+  <p class="voice">Write the judgment down, let the rules settle what they can, and put a person on what they cannot.</p>
+
+  <p class="all-work"><a href="how-i-work.html">The decision log, the metric rules, and the checks I run on my own numbers &rarr;</a></p>
+</section>
+
+<!-- ============ WORK ============ -->
+<section id="work">
+  <div class="sec-head">
+    <span class="label">Work</span>
+    <h2>The rest of it</h2>
+  </div>
+
+  <p class="prose">19 write-ups, grouped by what the work was for. Each leads with its outcome and states the definition behind every number.</p>
+
+  <div class="work-groups">
+    <div>
+      <span class="label">Forecasting and the system</span>
+      <ul>
+        <li><a href="work/forecasting-system.html">The forecasting system</a></li>
+        <li><a href="work/exception-based-planning.html">What the weekly job became</a></li>
+        <li><a href="work/handover-to-other-teams.html">Handing the system to other teams</a></li>
+        <li><a href="work/new-product-introduction.html">Forecasting new products before they sell</a></li>
+        <li><a href="work/fc-review-overhaul.html">Rebuilding the review rules</a></li>
+        <li><a href="work/data-integrity-review.html">Fix the data before you judge the item</a></li>
+        <li><a href="work/forecast-accuracy-measurement.html">Measuring forecast accuracy at all</a></li>
+        <li><a href="work/forecast-automation-engine.html">From R to Python to a forecast engine</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="label">Customers, orders and service level</span>
+      <ul>
+        <li><a href="work/supply-plan-vs-orders.html">How much of a customer's plan to trust</a></li>
+        <li><a href="work/wholesale-service-level.html">Service level for a grocery wholesaler</a></li>
+        <li><a href="work/allocation.html">Allocation when supply is short</a></li>
+        <li><a href="work/fc-order-backorder-tracker.html">Forecast, orders and back-orders in one tracker</a></li>
+        <li><a href="work/shared-stock-pool.html">Back-orders at two retailers, caused by a third</a></li>
+        <li><a href="work/order-trend-dashboard.html">Order trend and in-stock dashboard</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="label">Inventory and working capital</span>
+      <ul>
+        <li><a href="work/inventory-health-reporting.html">Excess and aging inventory, five plants</a></li>
+        <li><a href="work/stock-check-automation.html">Stock availability checks, automated</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="label">Procurement, logistics and data</span>
+      <ul>
+        <li><a href="work/shipping-route-automation.html">Freight routing from days of coverage</a></li>
+        <li><a href="work/dashboards.html">Dashboards for vendors, retailers and the warehouse</a></li>
+        <li><a href="work/data-platform.html">From SAP to Snowflake</a></li>      </ul>
+    </div>
+  </div>
+  <p class="all-work"><a href="work/">All write-ups, with results &rarr;</a></p>
+</section>
+
+<!-- ============ EARLIER WORK ============ -->
+<section id="earlier">
+  <div class="sec-head">
+    <span class="label">Earlier work</span>
+    <h2>Projects that still show up in my work</h2>
+  </div>
+
+  <p class="prose">Penn State and 2023, most relevant first. Each links to a full write-up.</p>
+
+  <div class="earlier-grid">
+    <article class="earlier-card">
+      <h3><a href="archive/2023/#boeing-case-competition">Boeing case competition</a></h3>
+      <span class="prov meta">Penn State &times; Boeing &middot; fall 2022 &middot; team</span>
+      <p>A 60-helicopter contract under a delivery cap, a price ceiling and rising costs. A <span class="val">$10M</span> investment that cut lead time from <span class="val">40</span> to <span class="val">30</span> months held return on sales at <span class="val">15%</span> instead of <span class="val">12&ndash;13%</span>, about <span class="val">$53M</span> more profit. We also timed an advance purchase of the longest-lead part.</p>
+      <p class="now">Now: the same lead-time-against-cost trade-off the freight-routing rules settle on every line.</p>
+    </article>
+    <article class="earlier-card">
+      <h3><a href="archive/2023/#stock-price-forecasting">Stock price forecasting</a></h3>
+      <span class="prov meta">team project &middot; 2023 &middot; LSTM + XGBoost stacking</span>
+      <p>Next-day price for any U.S.-listed stock: one LSTM on market indicators, one on seven FRED macro series and scraped financial statements, stacked by an XGBoost meta-model.</p>
+      <p class="now">Now: looking back, interpolating quarterly data leaked the future into the past. It is why I fit every transformation on training data only.</p>
+    </article>
+    <article class="earlier-card">
+      <h3><a href="archive/2023/#labor-market-research">Labor market research</a></h3>
+      <span class="prov meta">Eberly College summer research &middot; 2023 &middot; poster</span>
+      <p>What moves pay and job satisfaction for data analysts, and which skills employers ask for: an IRB-approved survey (<span class="val">131</span> responses) plus Glassdoor and job-market data, tested with Kruskal&ndash;Wallis, Dunn's test and regression.</p>
+      <p class="now">Now: choosing the test to fit the data, and deciding what counts as evidence before looking.</p>
+    </article>
+  </div>
+
+  <p class="all-work"><a href="archive/2023/">Archive: full write-ups, plus coursework in regression, SQL and Tableau &rarr;</a></p>
+</section>
+
+<!-- ============ BACKGROUND ============ -->
+<section id="background">
+  <div class="sec-head">
+    <span class="label">Background</span>
+    <h2>Jay Sejun Song</h2>
+  </div>
+
+  <div class="cv">
+    <div class="cv-row">
+      <div class="when">2026.01 &mdash; present</div>
+      <div>
+        <h3>Supply Chain Analyst, Analytics &amp; AI (Demand Planning Specialist) &mdash; Kiss Beauty Group, Inc.</h3>
+        <p>Demand planning for 20+ retail accounts across the US, Canada and Europe. Co-built our agentic AI planning system, which nearly halved weighted forecast error in backtests. My part was the agent architecture, the business rules and guardrails, and the data integration. I also built the custom MCP server it runs on, with 30+ tools and 11 AI agents on our SAP and Snowflake data, which expanded planning capacity without added headcount. Since the system went live, the planning-related backorder rate is down 36%. It placed third of 24 teams in the company-wide AI Awards 2026, and 15+ people in four product divisions run it weekly. Separately, I lifted one retailer's on-time in-full from 84% to 98% by prioritizing complete fulfillment of high-priority orders under short supply, and set the company's first three-year aging cutoff for excess stock.</p>
+      </div>
+    </div>
+    <div class="cv-row">
+      <div class="when">2024.01 &mdash; 2025.12</div>
+      <div>
+        <h3>Junior Demand Planning Data Analyst &mdash; Kiss Beauty Group, Inc.</h3>
+        <p>Calibrated monthly SKU-level forecasts for six US and UK retail accounts to confirmed door counts, store reset timing, in-stock rates and each retailer's order pattern. Worked with sales operations to size initial pipeline fills for 300+ new-item launches across those accounts' spring 2026 resets, flagging supply gaps before they reached the shelf. Built the freight-routing automation that 15+ buyers in four divisions now run, automated stock checks for 15+ accounts with SAP macros and Python, and built a self-serve Power BI order model that is still in use. Promoted to Demand Planning Specialist.</p>
+      </div>
+    </div>
+    <div class="cv-row">
+      <div class="when">2023.05 &mdash; 2023.08</div>
+      <div>
+        <h3>Undergraduate Research Assistant &mdash; Eberly College of Science, Penn State</h3>
+        <p>A funded summer study of what moves analyst pay and what employers ask for: an IRB-approved survey (131 responses), job postings scraped in R, 600+ job descriptions text-mined for required skills, and a regression on pay. I chose the topic and presented the findings on a research poster as first author, supported by a faculty advisor (<a href="#earlier">above</a>).</p>
+      </div>
+    </div>
+    <div class="cv-row">
+      <div class="when">2020.06 &mdash; 2021.12</div>
+      <div>
+        <h3>Sergeant, communications &mdash; Republic of Korea Ministry of National Defense</h3>
+        <p>Equipment readiness and maintenance scheduling.</p>
+      </div>
+    </div>
+    <div class="cv-row">
+      <div class="when">2018.08 &mdash; 2023.12</div>
+      <div>
+        <h3>B.S. Statistics &mdash; The Pennsylvania State University</h3>
+        <p>Minors in Mathematics and Information Sciences &amp; Technology.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="prov" style="margin-top:2rem;max-width:44rem">Demand forecasting and forecast accuracy analysis &middot; S&amp;OP &middot; CPFR &middot; new product introduction (NPI) &middot; allocation and replenishment planning &middot; E&amp;O and aging inventory &middot; Python (pandas, NumPy) &middot; SQL &middot; Snowflake &middot; SAP (MRP, sales orders, purchasing) &middot; Power BI and DAX &middot; time-series forecasting and backtesting &middot; agentic AI and multi-agent systems &middot; R &middot; Tableau &middot; Excel</p>
+  <p class="prov" style="margin-top:.6rem;max-width:44rem">Certificates: <a href="archive/2023/certificates/google-data-analytics-professional-certificate.pdf">Google Data Analytics Professional Certificate</a> &middot; <a href="archive/2023/certificates/tableau-desktop-specialist.pdf">Tableau Desktop Specialist</a></p>
+
+  <div class="contact">
+    <a href="mailto:jaysejunsong@gmail.com">jaysejunsong@gmail.com</a>
+    <a href="https://www.linkedin.com/in/jay-sejun-song">linkedin.com/in/jay-sejun-song</a>
+    <a href="https://github.com/yss2333">github.com/yss2333</a>
+  </div>
+</section>
+
+<footer>
+  <p class="prov">Figures carry the definition they were measured under. Where a number is modeled rather than delivered, or a decision rather than a booked result, it says so. Accounts are named where the work described is my own planning, and left as a type where the number belongs to the customer. Raw order and sales data, customer contract terms, system credentials and internal identifiers stay out. &middot; <a href="changes.html">Changes</a> &middot; Updated October 2026</p>
+</footer>
+
+</div>
+
+<script>
+  // Theme toggle: follows the system setting until the reader chooses, then remembers the choice.
+  (function () {
+    const root = document.documentElement;
+    const btn = document.querySelector('.theme-toggle');
+    const systemDark = () => matchMedia('(prefers-color-scheme: dark)').matches;
+    btn.addEventListener('click', () => {
+      const dark = root.dataset.theme ? root.dataset.theme === 'dark' : systemDark();
+      root.dataset.theme = dark ? 'light' : 'dark';
+      try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+    });
+
+    // Highlight the section in view in the top navigation.
+    const links = [...document.querySelectorAll('.topnav-links a')];
+    const byId = Object.fromEntries(
+      links.map(a => [(a.getAttribute('href').split('#')[1] || ''), a]).filter(([id]) => id)
+    );
+    const seen = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting && byId[e.target.id]) {
+          links.forEach(a => a.removeAttribute('aria-current'));
+          byId[e.target.id].setAttribute('aria-current', 'true');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('section[id]').forEach(s => seen.observe(s));
+  })();
+</script>
+</body>
+</html>
