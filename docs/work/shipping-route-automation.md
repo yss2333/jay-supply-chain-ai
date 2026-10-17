@@ -1,6 +1,6 @@
 # Freight routing from days of coverage
 
-Our supplier sends a shipping plan every two days. We decide how each item should travel, send it back, and they ship to that answer — so the reply is the instruction. With roughly 120 days from purchase order to receipt, a wrong mode cannot be manufactured away: the only lever left is how it moves.
+Our supplier sends a shipping plan every two days. We decide how each item should travel, send it back, and they ship to that answer — so the reply is the instruction. With three to four months from purchase order to receipt, a wrong mode cannot be manufactured away: the only lever left is how it moves.
 
 <a href="../diagrams/shipping-route.html"><picture><source media="(prefers-color-scheme: dark)" srcset="../images/diagrams/shipping-route-dark.png"><img alt="Diagram: each new outbound line rolls supply and demand forward day by day to days of coverage, rules map coverage to a freight route with overrides, results are written back for the buyer; air landed on 0.6% of lines routed to a cheap lane against 29% of lines flagged at-risk." src="../images/diagrams/shipping-route.png" width="100%"></picture></a>
 

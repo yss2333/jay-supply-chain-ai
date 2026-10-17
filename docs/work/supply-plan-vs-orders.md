@@ -1,10 +1,10 @@
 # How much of a customer's plan to trust
 
-A mass retailer sends a weekly supply plan covering the next year. Our lead time is about four months. So the real question is how far ahead we can commit production against that plan, and which part of it keeps moving.
+A mass retailer sends a weekly supply plan covering the next year. Our lead time is three to four months. So the real question is how far ahead we can commit production against that plan, and which part of it keeps moving.
 
 ## What I did
 
-- **Assembled 20 consecutive weekly plan snapshots** and matched each one against the orders that actually landed, aligned by lead time: a January plan is scored against May orders.
+- **Assembled 20 consecutive weekly plan snapshots** and matched each one against the orders that actually landed, aligned four months ahead, the long end of that lead time: a January plan is scored against May orders.
 - **Read the files defensively, without editing them.** Across the 20 files there were five kinds of format drift: sheet-name case, column counts, which weekday the weekly buckets start on, and summary sheets whose layout changed. The reader absorbs all five, so the customer's files stay untouched.
 - **Chose the join key after the first one broke.** Our own vendor codes carry variant suffixes, so matching on them failed silently. Matching on the customer's item number matched 99.1% of order lines.
 - **Used an outer join.** An inner join silently drops items that were never in the plan but were still ordered. For one month it flipped the sign of the plan-versus-actual gap.
@@ -21,7 +21,7 @@ Items that looked like "ordered, but never in the plan" were mostly the customer
 
 | Plan written | May | June | July | Average miss |
 |---|---|---|---|---|
-| 4 months ahead, at our lead time | +5.2% | −6.4% | +14.5% | **8.7%** |
+| 4 months ahead, the long end of our lead time | +5.2% | −6.4% | +14.5% | **8.7%** |
 | 1 month ahead | +1.0% | −10.5% | +19.9% | 10.5% |
 
 Gap = (actual orders − plan) ÷ plan. The customer cuts its plan hard in the last weeks before a month, and cuts too far. July's plan fell 17% between early May and early June. Actual orders landed within 0.5% of the early-May plan.
