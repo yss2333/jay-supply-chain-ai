@@ -36,8 +36,8 @@ Also: [how I decide a number is real](docs/how-i-work.md) · [about](docs/about.
 | Coverage | 1 region → 3, weekly | the US, Canada and Europe · review throughput ≈4× (monthly → weekly), filling a capacity gap without a new hire |
 | Recurring software cost | −$26,517 / yr | 88% lower: a third-party planning platform's $30,117/yr license, now retired, less $3,600/yr for the in-house system · a realized saving |
 | Planning backorders | −36% | share of sales orders backordered for planning or procurement reasons, January to October 2025 against the same months of 2026 · the system went live in January 2026 · procurement codes sit in the same measure, so I do not claim all of the drop |
-| Adoption | 4 divisions | nail, lash, cosmetics and appliances · 15+ purchasing and supply-chain users run it weekly on their own accounts · each team set up on its own data, trained, and running it without me |
-| On-time in-full | 84% → 98% | one retailer's own vendor scorecard, within six months · late and short penalties down 31% year over year through the first quarter · allocation across 20+ retail accounts since Q3 2025 · unit fill rate was already about 99%, so the gain came from allocation, not extra inventory · the same approach took a second major retailer's fill rate from the mid-80s to the high-90s, held for eight months · read next to [excess and aging stock](docs/work/inventory-health-reporting.md) |
+| Adoption | 4 divisions | nail, lash, cosmetics and appliances · 15+ purchasing and supply chain users run it weekly on their own accounts · each team set up on its own data, trained, and running it without me |
+| On-time in-full | 84% → 98% | one retailer's own vendor scorecard, within six months · late and short penalties down 31% year over year through the first quarter · allocation across 20+ retail accounts since Q3 2025 · unit fill rate was already about 99%, so the gain came from allocation, not extra inventory · the same approach took a second major retailer's fill rate from the mid-80s to the high 90s, held for eight months · read next to [excess and aging stock](docs/work/inventory-health-reporting.md) |
 
 </details>
 

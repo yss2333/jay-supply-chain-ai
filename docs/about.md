@@ -29,7 +29,7 @@ Python (pandas, NumPy, openpyxl) · SQL and Snowflake · SAP (MRP, sales orders,
 
 ## Background
 
-- **Third place of 24 teams, company-wide AI Awards, 2026** — for the multi-agent demand-planning system, which three other product divisions went on to adopt.
+- **Third place of 24 teams, company-wide AI Awards, 2026** — for the multi-agent demand planning system, which three other product divisions went on to adopt.
 - **B.S. Statistics**, The Pennsylvania State University, August 2018 to December 2023. Minors in Mathematics and Information Sciences & Technology.
 - **Undergraduate Research Assistant**, Eberly College of Science, Penn State, May–August 2023. A funded summer study of what moves analyst pay and what employers ask for: an IRB-approved survey (131 responses), job postings scraped in R, 600+ job descriptions text-mined, and a regression on pay. I chose the topic and presented the findings on a research poster as first author, supported by a faculty advisor.
 - **Sergeant, communications**, Republic of Korea Ministry of National Defense, 2020–2021. Equipment readiness and maintenance scheduling.

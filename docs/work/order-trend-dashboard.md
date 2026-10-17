@@ -1,6 +1,6 @@
 # Order trend and in-stock dashboard
 
-**One self-serve Power BI model that puts 600K+ order lines from all 130 customers alongside weekly store in-stock and point-of-sale, refreshed daily.** It anchors order-exception reviews with retailers (CPFR) and, for two years now, sell-through tracking across sales, product development, consumer insight and other product divisions.
+**One self-service Power BI model that puts 600K+ order lines from all 130 customers alongside weekly store in-stock and point-of-sale, refreshed daily.** It anchors order-exception reviews with retailers (CPFR) and, for two years now, sell-through tracking across sales, product development, consumer insight and other product divisions.
 
 ## My role
 

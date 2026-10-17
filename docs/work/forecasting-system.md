@@ -104,7 +104,7 @@ Most of what the system produces is a non-event like this one, which is the poin
 - **Coverage** — the US, Canada and Europe · review throughput ≈4× (monthly → weekly)
 - **Software cost** — a third-party planning platform's $30,117/yr license, now retired, less $3,600/yr for the in-house system, 88% lower · a realized saving
 - **Planning backorders** — backordered order value tagged with planning or procurement reason codes, as a share of all sales-order value · January to October 2025 against the same months of 2026 · the system went live in January 2026 · procurement codes sit in the same measure, so I do not claim all of the drop
-- **Adoption** — nail, lash, cosmetics and appliances · 15+ purchasing and supply-chain users run it weekly on their own accounts · each team was set up on its own data, trained, and now runs it without me
+- **Adoption** — nail, lash, cosmetics and appliances · 15+ purchasing and supply chain users run it weekly on their own accounts · each team was set up on its own data, trained, and now runs it without me
 
 </details>
 

@@ -28,7 +28,7 @@ Accounts are named where the work being described is my own planning, and left a
 | ★ | [Allocation when supply is short](allocation.md) | On-time in-full 84% → 98% on a retailer's own scorecard, across 20+ accounts — by diagnosing each shortfall and completing orders in priority order instead of splitting stock thin |
 | | [Forecast, orders and back-orders in one tracker](fc-order-backorder-tracker.md) | Retailer forecast against our forecast, orders and back-orders, per item |
 | | [Back-orders at two retailers, caused by a third](shared-stock-pool.md) | A shared regional stock pool and an account with no forecast of its own |
-| | [Order trend and in-stock dashboard](order-trend-dashboard.md) | 600K+ order lines from all 130 customers beside weekly store in-stock and point-of-sale in one self-serve model, refreshed daily; it anchors order-exception reviews with retailers. A forecast-variance report and per-retailer trend reports sit beside it |
+| | [Order trend and in-stock dashboard](order-trend-dashboard.md) | 600K+ order lines from all 130 customers beside weekly store in-stock and point-of-sale in one self-service model, refreshed daily; it anchors order-exception reviews with retailers. A forecast-variance report and per-retailer trend reports sit beside it |
 
 ## Inventory and working capital
 

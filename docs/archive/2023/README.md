@@ -78,14 +78,14 @@ What moves salary and job satisfaction for data analysts, which skills employers
 ### What I did
 
 - **Designed and ran a survey.** Wrote the questionnaire from a literature review of job-satisfaction studies, built it in Qualtrics, took the study through IRB approval, and shared it across social platforms: 131 responses.
-- **Brought in two more sources:** Glassdoor pay data across the U.S. labor market, and a data-analyst job-market dataset covering salaries, industries and in-demand skills. Scraped Indeed and Glassdoor postings in R and text-mined 600+ job descriptions for the skills they ask for.
+- **Brought in two more sources:** Glassdoor pay data across the U.S. labor market, and a data analyst job-market dataset covering salaries, industries and in-demand skills. Scraped Indeed and Glassdoor postings in R and text-mined 600+ job descriptions for the skills they ask for.
 - **Matched the tests to the data.** Salary differences across industries were tested with Kruskal–Wallis, a rank-based test that does not assume normally distributed data, followed by Dunn's post-hoc test to find which industries differed. Total pay was modeled with regression, adjusting for other factors, and job satisfaction with ordinal logistic regression. All in R.
 
 ### What it found
 
 - Across the postings, SQL was the most requested of 20 tracked skills, at 31% of skill mentions and twice Excel's share.
 - In the Glassdoor data, a regression on total pay found each seniority level added about $9,700 and a master's degree about $6,300.
-- Average data-analyst salaries differed significantly across industries.
+- Average data analyst salaries differed significantly across industries.
 - In the survey, 93% of respondents aged 25–34 reported job satisfaction, against about 80% of those aged 35–54.
 
 ![Presenting the research poster, August 2023](img/research-poster-session.jpg)

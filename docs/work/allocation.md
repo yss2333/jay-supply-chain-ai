@@ -1,6 +1,6 @@
 # Allocation when supply is short
 
-When stock runs short, someone decides who gets what, and every choice moves a service score somewhere else. I have managed that call since the third quarter of 2025 across 20+ retail accounts in the US, Canada and Europe. On the retailer that scores us in the most detail, on-time in-full went from 84% to 98% within six months and late and short penalties fell 31% year over year through the first quarter. The method was to diagnose the cause of each shortfall and complete orders in priority order instead of spreading short stock thin, and the same approach took a second major retailer's fill rate from the mid-80s to the high-90s.
+When stock runs short, someone decides who gets what, and every choice moves a service score somewhere else. I have managed that call since the third quarter of 2025 across 20+ retail accounts in the US, Canada and Europe. On the retailer that scores us in the most detail, on-time in-full went from 84% to 98% within six months and late and short penalties fell 31% year over year through the first quarter. The method was to diagnose the cause of each shortfall and complete orders in priority order instead of spreading short stock thin, and the same approach took a second major retailer's fill rate from the mid-80s to the high 90s.
 
 <a href="../diagrams/allocation.html"><picture><source media="(prefers-color-scheme: dark)" srcset="../images/diagrams/allocation-dark.png"><img alt="Diagram: classify each shortfall, fill back-orders first and real stock gaps second, trim over-orders to plan, complete orders in priority order, check coverage and tell the account; on-time in-full rose from 84% to 98% on a retailer's own scorecard." src="../images/diagrams/allocation.png" width="100%"></picture></a>
 
@@ -36,7 +36,7 @@ Treating all three the same way is how a planner ends up with a healthy-looking 
 - **On-time in-full rose from 84% to 98% within six months,** on the retailer's own vendor scorecard — a number the customer calculates, not us. CVS was the hardest account, and it is the one that scores us in enough detail to show.
 - **Late and short penalties on that scorecard fell 31% year over year through the first quarter.**
 - **Unit fill rate was already about 99%.** The gain did not come from holding more stock; it came from which orders the short stock went to.
-- **The same approach took a second major retailer's fill rate from the mid-80s to the high-90s, and it has held there for eight months,** on that retailer's own report card. The point of the second result is that the first was not specific to one account.
+- **The same approach took a second major retailer's fill rate from the mid-80s to the high 90s, and it has held there for eight months,** on that retailer's own report card. The point of the second result is that the first was not specific to one account.
 
 ## Limitations
 
