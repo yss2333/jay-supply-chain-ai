@@ -40,7 +40,7 @@ Invest the $10M in 2023, buy the transmission in advance in 2024, and meet both 
 
 ### Where it shows up now
 
-Lead time against cost is the trade-off the [freight-routing](../../work/shipping-route-automation.md) rules settle on every line: pay for speed only where coverage says you have to, and secure the long-lead item before it becomes the constraint.
+Lead time against cost is the trade-off the [freight mode selection](../../work/shipping-route-automation.md) rules settle on every line: pay for speed only where coverage says you have to, and secure the long-lead item before it becomes the constraint.
 
 [Team presentation (PDF)](docs/boeing-case-competition.pdf)
 

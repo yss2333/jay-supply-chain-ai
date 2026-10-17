@@ -1,6 +1,6 @@
 # Forecasting new products before they sell
 
-**I developed the cross-retailer sales-velocity forecast that supported a pitch securing a second national retailer for a nail set ranked No. 4 in sales at its launch retailer**, scaling that forecast to the new retailer's distribution. Across launches, I forecast 178 new items in 380+ retailer launches, and wrote the launch-window rules that stop the review system cutting a launch too early.
+**I developed the cross-retailer sales velocity forecast that supported a pitch securing a second national retailer for a nail set ranked No. 4 in sales at its launch retailer**, scaling that forecast to the new retailer's distribution. Across launches, I forecast 178 new items in 380+ retailer launches, and wrote the launch-window rules that stop the review system cutting a launch too early.
 
 [The problem](#the-problem) · [How a launch is forecast](#how-a-launch-is-forecast) · [The forecast behind a new retailer](#the-forecast-behind-a-new-retailer) · [Launch-window rules](#launch-window-rules) · [Limitations](#limitations)
 
