@@ -46,4 +46,4 @@ The headline figures are measured separately. On our eight major domestic accoun
 
 ## Run it
 
-A clean-room version on synthetic data: [notebook 02](https://github.com/yss2333/jay-supply-chain-ai-portfolio/blob/main/system/notebooks/02_validation.ipynb) — the validation stages, and what an unfinished month does to a score.
+A clean-room version on synthetic data: [notebook 02](https://github.com/yss2333/Jay-supply-chain-ai-portfolio/blob/main/system/notebooks/02_validation.ipynb) — the validation stages, and what an unfinished month does to a score.

@@ -68,4 +68,4 @@ Known and written down rather than discovered later: the supplier-specific thres
 
 ## Run it
 
-A clean-room version on synthetic data: [notebook 05](https://github.com/yss2333/jay-supply-chain-ai-portfolio/blob/main/system/notebooks/05_coverage_and_routing.ipynb) — days of coverage rolled forward, the route it implies, and what a stale stock figure changes.
+A clean-room version on synthetic data: [notebook 05](https://github.com/yss2333/Jay-supply-chain-ai-portfolio/blob/main/system/notebooks/05_coverage_and_routing.ipynb) — days of coverage rolled forward, the route it implies, and what a stale stock figure changes.

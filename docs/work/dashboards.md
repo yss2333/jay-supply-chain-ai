@@ -37,4 +37,4 @@ Store in-stock fell at a national mass retailer, and the first read was that the
 
 ## Run it
 
-A clean-room version on synthetic data: [notebook 05](https://github.com/yss2333/jay-supply-chain-ai-portfolio/blob/main/system/notebooks/05_coverage_and_routing.ipynb) — the coverage number behind the supplier report, and its five tiers.
+A clean-room version on synthetic data: [notebook 05](https://github.com/yss2333/Jay-supply-chain-ai-portfolio/blob/main/system/notebooks/05_coverage_and_routing.ipynb) — the coverage number behind the supplier report, and its five tiers.

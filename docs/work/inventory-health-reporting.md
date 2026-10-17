@@ -34,4 +34,4 @@ Excess and obsolete (E&O) reporting for five plants in the US, Canada and Europe
 
 ## Run it
 
-A clean-room version on synthetic data: [notebook 03](https://github.com/yss2333/jay-supply-chain-ai-portfolio/blob/main/system/notebooks/03_excess_and_aging.ipynb) — four excess tiers and 3-year aging, with a write-off list that keeps over-buys off it.
+A clean-room version on synthetic data: [notebook 03](https://github.com/yss2333/Jay-supply-chain-ai-portfolio/blob/main/system/notebooks/03_excess_and_aging.ipynb) — four excess tiers and 3-year aging, with a write-off list that keeps over-buys off it.
