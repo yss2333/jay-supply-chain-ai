@@ -4,6 +4,8 @@ What changed on this site, and when. Numbers move only when the measurement behi
 
 ## 2026
 
+**October 20** — The planning-backorder figure now compares the second and third quarters of 2026 with the same quarters of 2025, in place of January to October. The system went live in January, and with a three-to-four-month lead time the first quarter still ran on orders placed before it. The −36% does not change. The new-product page now says the pitch placed the nail set with our second-largest retail account, in place of a second national retailer.
+
 **October 17** — Wording now follows how job postings and the industry write these terms: supply chain users, demand planning system, time series forecasting, self-service Power BI, sales velocity, and freight mode selection for the routing rules. No figures changed.
 
 **October 17** — The production lead time now reads three to four months from purchase order to receipt, in place of about four months or 120 days. Accuracy is still scored four months ahead, the long end of that range, so the headline figures do not change.

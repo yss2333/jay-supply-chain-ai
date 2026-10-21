@@ -93,7 +93,7 @@ Most of what the system produces is a non-event like this one, which is the poin
 | **Weekly review** | **5 h → 2 h** per account | measured |
 | **Coverage** | **1 region → 3**, weekly | measured |
 | **Software cost** | **−$26,517/yr** net, 88% lower | realized |
-| **Planning-related backorder rate** | **−36%**, January to October | measured, not all attributable |
+| **Planning-related backorder rate** | **−36%**, Q2–Q3 YoY | measured, not all attributable |
 | **Adoption** | **4 divisions**, 15+ users, weekly | in use |
 
 <details markdown="1">
@@ -103,7 +103,7 @@ Most of what the system produces is a non-event like this one, which is the poin
 - **Weekly review** — ≈60% less time per account review · ≈3,100 hrs/yr of capacity across the team (≈1.5 FTE): 3 hours a week × 20 accounts × 52 weeks · an estimate of what a weekly review of every account would have cost, since Canada and Europe were reviewed monthly or skipped before
 - **Coverage** — the US, Canada and Europe · review throughput ≈4× (monthly → weekly)
 - **Software cost** — a third-party planning platform's $30,117/yr license, now retired, less $3,600/yr for the in-house system, 88% lower · a realized saving
-- **Planning backorders** — backordered order value tagged with planning or procurement reason codes, as a share of all sales-order value · January to October 2025 against the same months of 2026 · the system went live in January 2026 · procurement codes sit in the same measure, so I do not claim all of the drop
+- **Planning backorders** — backordered order value tagged with planning or procurement reason codes, as a share of all sales-order value · the second and third quarters of 2026 against the same quarters of 2025 · the system went live in January 2026, and with a three-to-four-month lead time the first quarter still ran on orders placed before it · procurement codes sit in the same measure, so I do not claim all of the drop
 - **Adoption** — nail, lash, cosmetics and appliances · 15+ purchasing and supply chain users run it weekly on their own accounts · each team was set up on its own data, trained, and now runs it without me
 
 </details>

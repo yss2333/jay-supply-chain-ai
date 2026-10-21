@@ -35,7 +35,7 @@ Also: [how I decide a number is real](docs/how-i-work.md) · [about](docs/about.
 | Weekly forecast review | 5 h → 2 h per account | ≈60% less time per account review · ≈3,100 hrs/yr of capacity across the team (≈1.5 FTE): 3 hours a week × 20 accounts × 52 weeks · an estimate of what a weekly review of every account would have cost, since Canada and Europe were reviewed monthly or skipped before |
 | Coverage | 1 region → 3, weekly | the US, Canada and Europe · review throughput ≈4× (monthly → weekly), filling a capacity gap without a new hire |
 | Recurring software cost | −$26,517 / yr | 88% lower: a third-party planning platform's $30,117/yr license, now retired, less $3,600/yr for the in-house system · a realized saving |
-| Planning backorders | −36% | share of sales orders backordered for planning or procurement reasons, January to October 2025 against the same months of 2026 · the system went live in January 2026 · procurement codes sit in the same measure, so I do not claim all of the drop |
+| Planning backorders | −36% | share of sales orders backordered for planning or procurement reasons, the second and third quarters of 2026 against the same quarters of 2025 · the system went live in January 2026, and with a three-to-four-month lead time the first quarter still ran on orders placed before it · procurement codes sit in the same measure, so I do not claim all of the drop |
 | Adoption | 4 divisions | nail, lash, cosmetics and appliances · 15+ purchasing and supply chain users run it weekly on their own accounts · each team set up on its own data, trained, and running it without me |
 | On-time in-full | 84% → 98% | one retailer's own vendor scorecard, within six months · late and short penalties down 31% year over year through the first quarter · allocation across 20+ retail accounts since Q3 2025 · unit fill rate was already about 99%, so the gain came from allocation, not extra inventory · the same approach took a second major retailer's fill rate from the mid-80s to the high 90s, held for eight months · read next to [excess and aging stock](docs/work/inventory-health-reporting.md) |
 
@@ -72,7 +72,7 @@ Cutting and raising follow deliberately different rules, because the two ways to
 - [What the weekly job became](docs/work/exception-based-planning.md) — rules settle what they can, a person takes the rest
 - [Allocation when supply is short](docs/work/allocation.md) — on-time-in-full 84% → 98% on the retailer's own scorecard
 - [Handing the system to teams that are not mine](docs/work/handover-to-other-teams.md) — four product divisions, 15+ people, weekly, without me
-- [Forecasting new products before they sell](docs/work/new-product-introduction.md) — the cross-retailer forecast that supported a pitch securing a second national retailer; 178 new items across 380+ launches
+- [Forecasting new products before they sell](docs/work/new-product-introduction.md) — the cross-retailer forecast that supported a pitch placing a top-selling nail set with our second-largest retail account; 178 new items across 380+ launches
 - [Rebuilding the review rules](docs/work/fc-review-overhaul.md) · [Fix the data before you judge the item](docs/work/data-integrity-review.md)
 - [Measuring forecast accuracy at all](docs/work/forecast-accuracy-measurement.md) · [From R to Python to a forecast engine](docs/work/forecast-automation-engine.md)
 

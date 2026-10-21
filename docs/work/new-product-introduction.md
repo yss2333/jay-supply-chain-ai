@@ -1,6 +1,6 @@
 # Forecasting new products before they sell
 
-**I developed the cross-retailer sales velocity forecast that supported a pitch securing a second national retailer for a nail set ranked No. 4 in sales at its launch retailer**, scaling that forecast to the new retailer's distribution. Across launches, I forecast 178 new items in 380+ retailer launches, and wrote the launch-window rules that stop the review system cutting a launch too early.
+**I developed the cross-retailer sales velocity forecast that supported a pitch placing a nail set ranked No. 4 in sales at its launch retailer with our second-largest retail account**, scaling that forecast to the account's distribution. Across launches, I forecast 178 new items in 380+ retailer launches, and wrote the launch-window rules that stop the review system cutting a launch too early.
 
 [The problem](#the-problem) · [How a launch is forecast](#how-a-launch-is-forecast) · [The forecast behind a new retailer](#the-forecast-behind-a-new-retailer) · [Launch-window rules](#launch-window-rules) · [Limitations](#limitations)
 
@@ -25,7 +25,7 @@ For each of the 178 new items and 380+ retailer launches, a launch forecast is s
 
 ## The forecast behind a new retailer
 
-A nail set ranked No. 4 in sales at the retailer that launched it. To pitch it to a second national retailer, I took its sales per store per week at the launch retailer and scaled that velocity to the new retailer's store count. That forecast went into the sales team's pitch, and the second retailer took the set.
+A nail set ranked No. 4 in sales at the retailer that launched it. To pitch it to our second-largest retail account, I took its sales per store per week at the launch retailer and scaled that velocity to that account's store count. That forecast went into the sales team's pitch, and the account took the set.
 
 I then designed a regression model with shrinkage that scores each product attribute and each retailer's fit, so the same reasoning can reach items with no sales history anywhere. It is a design so far: a clean attribute table is the work it still needs.
 
