@@ -56,4 +56,4 @@ Accounts are named where the work being described is my own planning, and left a
 
 ## Runnable
 
-[A clean-room version of the system](https://github.com/yss2333/Jay-supply-chain-ai-portfolio/tree/main/system) on synthetic data: the rule engine, the review agents, six Jupyter notebooks and 31 tests. The rules described on these pages are its unit tests.
+[A clean-room version of the system](https://github.com/yss2333/jay-supply-chain-ai/tree/main/system) on synthetic data: the rule engine, the review agents, six Jupyter notebooks and 31 tests. The rules described on these pages are its unit tests.

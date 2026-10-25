@@ -11,7 +11,7 @@ Most of what I build is a judgment about demand, and most arguments about demand
 | **Regression** | Did it break anything else? | Same data, before and after. The only differences allowed are the ones I intended, and I check that the count matches |
 | **Shadow** | Should it ship? | Run it beside the live system on real weeks, with nothing downstream connected, and compare |
 
-Each stage is a command in the [clean-room system](https://github.com/yss2333/Jay-supply-chain-ai-portfolio/tree/main/system): `python -m forecast_review backtest | regression | shadow`, plus the unit tests.
+Each stage is a command in the [clean-room system](https://github.com/yss2333/jay-supply-chain-ai/tree/main/system): `python -m forecast_review backtest | regression | shadow`, plus the unit tests.
 
 ## Always against a baseline
 

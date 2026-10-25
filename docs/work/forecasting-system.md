@@ -127,7 +127,7 @@ A note on the error metric: this is the standard form, total absolute error divi
 
 ## Run a version of it
 
-The production system stays private. [A clean-room version](https://github.com/yss2333/Jay-supply-chain-ai-portfolio/tree/main/system) rebuilds the same design from scratch on synthetic data: the asymmetric rules, retailer scouts, the refuter and the investigator as Claude Code sub-agents over an MCP tool server, and the four validation stages as commands. Six planted scenarios (a supply gap, a promotion in the baseline, a bulk order, and others) show each rule doing its job, and the rules on this page are its unit tests.
+The production system stays private. [A clean-room version](https://github.com/yss2333/jay-supply-chain-ai/tree/main/system) rebuilds the same design from scratch on synthetic data: the asymmetric rules, retailer scouts, the refuter and the investigator as Claude Code sub-agents over an MCP tool server, and the four validation stages as commands. Six planted scenarios (a supply gap, a promotion in the baseline, a bulk order, and others) show each rule doing its job, and the rules on this page are its unit tests.
 
 [![The clean-room system map: synthetic data, signals, seasonality, rule engine, investigator, refuter and planner, with an MCP server, sub-agents and validation around them.](../images/diagrams/system-map.png)](../diagrams/system-map.html)
 

@@ -32,4 +32,4 @@ Gap = (actual orders − plan) ÷ plan. The customer cuts its plan hard in the l
 
 ## Run it
 
-A clean-room version on synthetic data: [notebook 04](https://github.com/yss2333/Jay-supply-chain-ai-portfolio/blob/main/system/notebooks/04_supply_plan_horizon.ipynb) — every horizon scored, both anchors, and what an inner join would have hidden.
+A clean-room version on synthetic data: [notebook 04](https://github.com/yss2333/jay-supply-chain-ai/blob/main/system/notebooks/04_supply_plan_horizon.ipynb) — every horizon scored, both anchors, and what an inner join would have hidden.
