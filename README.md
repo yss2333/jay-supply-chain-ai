@@ -1,6 +1,6 @@
 # Jay (Sejun) Song
 
-**Supply chain analytics & applied AI** · CPG beauty · US / Canada / Europe
+**Supply Chain Analytics & Applied AI** · CPG beauty · US / Canada / Europe
 
 > I am a demand planner who builds the forecasting systems I plan with.
 
