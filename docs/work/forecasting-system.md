@@ -6,7 +6,7 @@
 
 [My role](#my-role) · [The problem](#the-problem) · [How it is built](#how-it-is-built) · [Design decisions](#design-decisions) · [One item's trace](#one-items-trace) · [Results](#results) · [Limitations](#limitations)
 
-**In backtests on our eight major domestic accounts, weighted forecast error fell from 35–45% to 18–25%. The weekly review went from about 5 hours to 2 per account, and coverage from one region to three, filling a capacity gap without a new hire.** Since the system went live in January 2026, the share of sales orders backordered for planning reasons is down 36%. An agentic AI planning system for 20+ retail accounts across the US, Canada and Europe, about 1,400 nail SKUs. It placed third of 24 teams in the company-wide AI Awards 2026.
+**In backtests on our eight major domestic accounts, weighted forecast error fell from 35–45% to 18–25%. The weekly review went from about 5 hours to 2 per account, and coverage from one region to three, filling a capacity gap without a new hire.** Since the system went live in January 2026, the share of sales orders backordered for planning reasons is down 36%. Store in-stock held above 94% every week from July to October 2026, against a 90% low over the same months of 2025. An agentic AI planning system for 20+ retail accounts across the US, Canada and Europe, about 1,400 nail SKUs. It placed third of 24 teams in the company-wide AI Awards 2026.
 
 ## My role
 
@@ -94,6 +94,7 @@ Most of what the system produces is a non-event like this one, which is the poin
 | **Coverage** | **1 region → 3**, weekly | measured |
 | **Software cost** | **−$26,517/yr** net, 88% lower | realized |
 | **Planning-related backorder rate** | **−36%**, Q2–Q3 YoY | measured, not all attributable |
+| **Store in-stock** | **above 94%** every week, July–October 2026 | measured, not all attributable |
 | **Adoption** | **4 divisions**, 15+ users, weekly | in use |
 
 <details markdown="1">
@@ -104,6 +105,7 @@ Most of what the system produces is a non-event like this one, which is the poin
 - **Coverage** — the US, Canada and Europe · review throughput ≈4× (monthly → weekly)
 - **Software cost** — a third-party planning platform's $30,117/yr license, now retired, less $3,600/yr for the in-house system, 88% lower · a realized saving
 - **Planning backorders** — backordered order value tagged with planning or procurement reason codes, as a share of all sales-order value · the second and third quarters of 2026 against the same quarters of 2025 · the system went live in January 2026, and with a three-to-four-month lead time the first quarter still ran on orders placed before it · procurement codes sit in the same measure, so I do not claim all of the drop
+- **Store in-stock** — share of stores with the item on the shelf, from each retailer's weekly point-of-sale feed · seven major accounts, nail items, each account's weekly figure averaged equally · above 94% in every week from July to October 2026; over the same months of 2025 it dipped to 90% · 94% is this year's floor and 90% last year's low, so this is not an average-to-average gain · retailers run their own store replenishment, so I do not claim all of it · shipments ran at about 1.08 times point-of-sale in both years, so it was not bought with extra stock
 - **Adoption** — nail, lash, cosmetics and appliances · 15+ purchasing and supply chain users run it weekly on their own accounts · each team was set up on its own data, trained, and now runs it without me
 
 </details>
@@ -136,6 +138,7 @@ The production system stays private. [A clean-room version](https://github.com/y
 - The accuracy figures are a range because they are a range: the spread across retailers, not a single number. Accounts with short histories or thin distribution sit at the wrong end of it.
 - The measured window is 2026 Q1 with a six-month rolling backtest, on eight major domestic accounts. It is not a multi-year track record, and it does not cover every account the system reviews.
 - The backorder figure compares the same months of two years. The system went live in between, but the measure also counts procurement problems, so it shows the direction, not how much the system alone did.
+- The in-stock figure is the retailers' own shelf measure, and they run store replenishment. It shows the accuracy gain did not come from ordering less; it does not show that the system alone kept the shelves full.
 - A rule engine encodes the exceptions someone has already seen. The next failure will be one nobody wrote a rule for, which is why the [integrity checks](data-integrity-review.md) and the [validation gate](../how-i-work.md) matter more than the rules do.
 
 ## What the output feeds

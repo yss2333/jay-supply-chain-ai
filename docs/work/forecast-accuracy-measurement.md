@@ -35,7 +35,7 @@ An unfinished month is never scored: the window starts one month back, so the cu
 
 Planners now work the exception list, and drift above plan surfaces mid-month.
 
-The headline figures are measured separately. On our eight major domestic accounts, weighted error went from 35–45% under the previous process to 18–25% in 2026 Q1, checked on a six-month rolling backtest. It is scored line by line (customer, month and item), with continuing items scored four months ahead, the long end of our three-to-four-month production lead time, and newly launched items one month ahead. Each range is the spread across retailers, not uncertainty in the measurement.
+The headline figures are measured separately. On our eight major domestic accounts, weighted error went from 35–45% under the previous process to 18–25% in 2026 Q1, checked on a six-month rolling backtest. It is scored line by line (customer, month and item), with continuing items scored three months ahead (October's shipments against the forecast made in July), inside our three-to-four-month production lead time, and newly launched items one month ahead. Each range is the spread across retailers, not uncertainty in the measurement.
 
 ## Limitations
 

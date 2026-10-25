@@ -10,7 +10,7 @@ Accounts are named where the work being described is my own planning, and left a
 
 | | What it is | Result |
 |---|---|---|
-| ★ | [The forecasting system](forecasting-system.md) | Weighted forecast error 35–45% → 18–25% in backtests; review 5h → 2h per account; three regions on a weekly cadence; planning-related backorders down 36% since it went live |
+| ★ | [The forecasting system](forecasting-system.md) | Weighted forecast error 35–45% → 18–25% in backtests; review 5h → 2h per account; three regions on a weekly cadence; planning-related backorders down 36% since it went live; store in-stock above 94% from July to October |
 | ★ | [What the weekly job became](exception-based-planning.md) | Every item still reviewed — by rules; a planner takes what the rules could not settle. Monthly cadence → weekly |
 | ★ | [Handing the system to teams that are not mine](handover-to-other-teams.md) | Four product divisions: 15+ people in their purchasing and supply chain teams, weekly, configured by them, not run by me |
 | | [Forecasting new products before they sell](new-product-introduction.md) | The cross-retailer forecast that supported a pitch placing a top-selling nail set with our second-largest retail account; NPI forecasting for 178 new items across 380+ launches; launch-window rules that stop early cuts |
