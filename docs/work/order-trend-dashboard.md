@@ -84,10 +84,10 @@ One case shows what the three are for together. Store in-stock fell at a nationa
 
 ## Result
 
-- **Shared across departments, not only planning.** Sales, product development, consumer insight and other product divisions use it when they need order or sell-through trends.
+- **Shared across departments beyond planning.** Sales, product development, consumer insight and other product divisions use it when they need order or sell-through trends.
 - **Trends at a glance instead of by hand.** Order, shortage and point-of-sale trends that used to mean pulling order lines for each question are one filter away.
 - **An order drop can be told apart from a demand drop.** Orders sit beside shelf stock and sell-through, so falling orders from full shelves read as a stocking pattern, not a lost customer.
-- **Kept current for two years.** It grew one view at a time as new questions came up, rather than being built once and left.
+- **Kept current for two years.** It grew one view at a time as new questions came up.
 
 ## Limitations
 

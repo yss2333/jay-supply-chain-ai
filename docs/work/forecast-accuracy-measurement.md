@@ -10,14 +10,14 @@ Forecasts were written each month and then never looked at again. When an item w
 
 The ERP holds a monthly forecast per item, customer and plant, and shipments and open orders separately. Neither keeps a history of its own accuracy: the forecast row is overwritten as the month moves.
 
-Shipping is lumpy. Many items ship on a two-month order cycle, so one month tells you almost nothing — a large month follows an empty one and both look wrong. The current month is always incomplete, by an amount that depends on the day you run it.
+Shipping is lumpy. Many items ship on a two-month order cycle, so one month tells you almost nothing: a large month follows an empty one and both look wrong. The current month is always incomplete, by an amount that depends on the day you run it.
 
 ## What I built
 
 A Python pipeline pulls forecast, shipments and open orders from the data warehouse for the domestic and Canada plants, keeps active, normally planned nail items with a forecast, and computes one measure.
 
 - **A trailing three-month ratio** — shipped plus open orders over forecast, summed across the three months before the current one. The rolling sum absorbs the order cycle: an empty month is paid for by the next.
-- **A flag band of 75 to 105 percent.** Inside it nobody looks; outside it the item goes on an exception list. It is asymmetric on purpose — 25 points below plan, 5 above — because shipping above plan is rarer and says more.
+- **A flag band of 75 to 105 percent.** Inside it nobody looks; outside it the item goes on an exception list. It is asymmetric on purpose (25 points below plan, 5 above) because shipping above plan is rarer and says more.
 - **Two lists.** The three-month list is the accuracy measure. A second flags the current month early, and before the 20th it flags only items above plan, since a month in progress always looks short.
 - Both are dated workbooks in the shared folders planners already use. The same data feeds a Power BI report.
 
@@ -46,4 +46,4 @@ The headline figures are measured separately. On our eight major domestic accoun
 
 ## Run it
 
-A clean-room version on synthetic data: [notebook 02](https://github.com/yss2333/jay-supply-chain-ai/blob/main/system/notebooks/02_validation.ipynb) — the validation stages, and what an unfinished month does to a score.
+A clean-room version on synthetic data: [notebook 02](https://github.com/yss2333/jay-supply-chain-ai/blob/main/system/notebooks/02_validation.ipynb). It covers the validation stages, and what an unfinished month does to a score.

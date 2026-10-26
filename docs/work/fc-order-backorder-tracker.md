@@ -1,6 +1,6 @@
 # Forecast, orders and back-orders in one tracker
 
-One page per account lines up the retailer's own forecast, our forecast, the orders that arrived, what shipped and what is still on back-order, item by item and month by month. It exists so stock gets secured and allocated while a gap is still a gap.
+One page per account lines up the retailer's own forecast, our forecast, the orders that arrived, what shipped and what is still on back-order, item by item and month by month. It exists so stock gets secured and allocated before a gap turns into a shortage.
 
 ## The problem
 
@@ -16,7 +16,7 @@ Three numbers lived in three places: the retailer's forecast in a file they emai
 
 ## What I built
 
-- **A self-contained HTML report per account** &mdash; the same hand-off idea as the [supplier coverage reports](dashboards.md) — data embedded, charts from a public library, no database connection, the UK file carrying both accounts as tabs rather than a sum.
+- **A self-contained HTML report per account** &mdash; the same hand-off idea as the [supplier coverage reports](dashboards.md), with data embedded, charts from a public library and no database connection. The UK file carries both accounts as tabs rather than a sum.
 - **Five series per item per month:** retailer forecast, our forecast, orders, shipped and back-order, plus store sales and in-stock where a feed exists, hidden where it does not.
 - **A week-to-month rule, written down:** a week goes whole to the month holding most of its days. I tried and dropped three alternatives; planners did not want a week split.
 - **An item universe that is the union** of the three sources, because an item in only one of them is the interesting one.
@@ -27,7 +27,7 @@ Three numbers lived in three places: the retailer's forecast in a file they emai
 
 - **It ties out.** Orders matched the ERP to the unit for both UK accounts, our forecast matched the planning total, and 100% of item codes mapped.
 - **A parsing defect undercounted a retailer's forecast by 44%.** The reader handled only text dates, so date-valued headers were skipped: it read 44% less than the file held.
-- **Our plan runs above theirs:** 8–34% higher over the months both cover, with year-to-date orders at 42% of our full-year plan — over-planning, or replenishment buffer we have never separated.
+- **Our plan runs above theirs:** 8–34% higher over the months both cover, with year-to-date orders at 42% of our full-year plan. The difference is either over-planning or replenishment buffer, and we have never separated the two.
 - **Scope inflated a gap.** Joining on both their product number and ours matched about 98% of the wholesaler's order lines; narrowing to nail items moved the forecast-over-order buffer from +65% to +90%.
 
 ## Limitations

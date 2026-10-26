@@ -13,7 +13,7 @@ I have planned demand at Kiss Beauty Group, a CPG beauty manufacturer, since Jan
 | 2025 | Forecast automation in Python; freight routing and stock checks as tools | The weekly work stopped being manual |
 | 2026 | A multi-agent forecasting system with a rule engine and a validation process | The engine we run on now, and the gate that decides what ships |
 
-The through-line is not the tools. It is that every year the answer to "how do you know that number is right?" got better.
+What improved every year was my answer to "how do you know that number is right?"
 
 ## What I do
 
@@ -21,7 +21,7 @@ The through-line is not the tools. It is that every year the answer to "how do y
 
 **Systems.** The forecasting engine, the review agents, the excess and aging inventory reporting, freight routing, supplier coverage reports, and the dashboards planners and buyers use.
 
-**Validation.** Unit tests, backtests against a naive baseline, regression and shadow comparisons. It is the part of the work I care most about, because it is the part that decides whether an improvement is real.
+**Validation.** Unit tests, backtests against a naive baseline, regression and shadow comparisons. It is the part of the work I care most about, because it decides whether an improvement is real.
 
 ## Tools
 
@@ -37,6 +37,6 @@ Python (pandas, NumPy, openpyxl) · SQL and Snowflake · SAP (MRP, sales orders,
 
 ## What I am looking for
 
-Supply chain analytics, demand planning, or the roles now being written as "build and validate the AI that plans" — where the work is both the forecast and the system that produces it.
+Supply chain analytics, demand planning, or the roles now being written as "build and validate the AI that plans", where the work is both the forecast and the system that produces it.
 
 [Email](mailto:jaysejunsong@gmail.com) · [LinkedIn](https://www.linkedin.com/in/jay-sejun-song) · [GitHub](https://github.com/yss2333)

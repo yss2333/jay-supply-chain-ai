@@ -8,7 +8,7 @@ After a year of running the weekly review, the rules had accumulated exceptions 
 
 ## The problem
 
-The rule engine decides four things for every item: raise, lower, hold, or leave alone. Cutting is where the damage lives. An item cut on a soft signal goes short on shelf, and a shelf takes months to recover.
+The rule engine decides four things for every item: raise, lower, hold, or leave alone. Most of the damage comes from cuts. An item cut on a soft signal goes short on shelf, and a shelf takes months to recover.
 
 Two failure modes had crept in:
 
@@ -23,13 +23,13 @@ Two failure modes had crept in:
 
 ## What I changed
 
-**A certainty gate on cuts.** A cut now requires all of it, not some of it: store in-stock at a healthy level, sell-through not rising, the forecast genuinely above the rate the item is selling at, and no sign that the item is simply working through an initial shipment. If the case is not clear, the answer is hold.
+**A certainty gate on cuts.** A cut now requires every one of these: store in-stock at a healthy level, sell-through not rising, the forecast genuinely above the rate the item is selling at, and no sign that the item is simply working through an initial shipment. If the case is not clear, the answer is hold.
 
-**A floor at the selling rate.** Even when a cut is right, the final forecast is not allowed to fall below what the item is actually selling, corrected for the weeks it was out of stock. A cut should bring the plan to reality, not below it.
+**A floor at the selling rate.** Even when a cut is right, the final forecast is not allowed to fall below what the item is actually selling, corrected for the weeks it was out of stock.
 
 **Tiered ceilings instead of one cap.** How far a cut can travel now depends on the region and where the item is in its life, with a trend guard that blocks the deepest tier when the recent trend does not support it.
 
-**A recovery guard.** Items chronically shipped short — where we are the constraint, not demand — are protected from further cuts and get a buffer instead.
+**A recovery guard.** Items chronically shipped short (where we are the constraint, not demand) are protected from further cuts and get a buffer instead.
 
 **A dynamic blend.** Early in a month, shipments say less than sell-through does, so the weight shifts toward point-of-sale and back as the month fills in.
 
@@ -44,4 +44,4 @@ Two failure modes had crept in:
 
 ## Limitations
 
-The backtest comes from a small sample at a single account. It is directionally right and it survived the regression and the wider re-validation, but it is not a precise measure of anything. The honest version of the claim is the rule change, not a percentage.
+The backtest comes from a small sample at a single account. It is directionally right and it survived the regression and the wider re-validation, but it is not a precise measure of anything. So the claim here is the rule change itself, with no percentage attached.

@@ -1,11 +1,11 @@
 # How much of a customer's plan to trust
 
-A mass retailer sends a weekly supply plan covering the next year. Our lead time is three to four months. So the real question is how far ahead we can commit production against that plan, and which part of it keeps moving.
+A mass retailer sends a weekly supply plan covering the next year. Our lead time is three to four months. So the question is how far ahead we can commit production against that plan, and which part of it keeps moving.
 
 ## What I did
 
 - **Assembled 20 consecutive weekly plan snapshots** and matched each one against the orders that actually landed, aligned four months ahead, the long end of that lead time: a January plan is scored against May orders.
-- **Read the files defensively, without editing them.** Across the 20 files there were five kinds of format drift: sheet-name case, column counts, which weekday the weekly buckets start on, and summary sheets whose layout changed. The reader absorbs all five, so the customer's files stay untouched.
+- **Read the files defensively, without editing them.** Across the 20 files the format drifted: sheet-name case, column counts, which weekday the weekly buckets start on, and summary sheets whose layout changed. The reader absorbs all of it, so the customer's files stay untouched.
 - **Chose the join key after the first one broke.** Our own vendor codes carry variant suffixes, so matching on them failed silently. Matching on the customer's item number matched 99.1% of order lines.
 - **Used an outer join.** An inner join silently drops items that were never in the plan but were still ordered. For one month it flipped the sign of the plan-versus-actual gap.
 - **Anchored each month on its first plan.** Anchoring on the last plan of the month catches the customer's steepest late cut and makes the gap between horizons look far larger. On the first plan it was 1.2 times. I report the first-plan number and wrote the anchoring rule down.
@@ -32,4 +32,4 @@ Gap = (actual orders − plan) ÷ plan. The customer cuts its plan hard in the l
 
 ## Run it
 
-A clean-room version on synthetic data: [notebook 04](https://github.com/yss2333/jay-supply-chain-ai/blob/main/system/notebooks/04_supply_plan_horizon.ipynb) — every horizon scored, both anchors, and what an inner join would have hidden.
+A clean-room version on synthetic data: [notebook 04](https://github.com/yss2333/jay-supply-chain-ai/blob/main/system/notebooks/04_supply_plan_horizon.ipynb). It scores every horizon on both anchors and shows what an inner join would have hidden.

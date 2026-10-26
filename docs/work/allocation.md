@@ -18,10 +18,10 @@ Treating all three the same way is how a planner ends up with a healthy-looking 
 
 ## Constraints
 
-- Allocation decisions happen inside the order cycle, not at leisure: purchase orders arrive on the retailer's schedule, and shipping windows are short.
+- Allocation decisions happen inside the order cycle: purchase orders arrive on the retailer's schedule, and shipping windows are short.
 - Stock sits in several plants and does not move between them quickly.
 - Retailers score us, and they score each purchase order as a whole. An order that arrives with 99 of 100 units counts the same as one that never arrived, so a partial fill earns nothing on the scorecard.
-- Some accounts share the same regional stock pool, so an allocation decision for one is an allocation decision for the others — including one that had no forecast of its own ([that case is here](shared-stock-pool.md)).
+- Some accounts share the same regional stock pool, so an allocation decision for one is an allocation decision for the others, including one that had no forecast of its own ([that case is here](shared-stock-pool.md)).
 
 ## What I did
 
@@ -33,10 +33,10 @@ Treating all three the same way is how a planner ends up with a healthy-looking 
 
 ## Result
 
-- **On-time in-full rose from 84% to 98% within six months,** on the retailer's own vendor scorecard — a number the customer calculates, not us. CVS was the hardest account, and it is the one that scores us in enough detail to show.
+- **On-time in-full rose from 84% to 98% within six months,** on the retailer's own vendor scorecard (the customer calculates it, not us). CVS was the hardest account, and it is the one that scores us in enough detail to show.
 - **Late and short penalties on that scorecard fell 31% year over year through the first quarter.**
 - **Unit fill rate was already about 99%.** The gain did not come from holding more stock; it came from which orders the short stock went to.
-- **The same approach took a second major retailer's fill rate from the mid-80s to the high 90s, and it has held there for eight months,** on that retailer's own report card. The point of the second result is that the first was not specific to one account.
+- **The same approach took a second major retailer's fill rate from the mid-80s to the high 90s, and it has held there for eight months,** on that retailer's own report card. The second result shows that the first was not specific to one account.
 
 ## Limitations
 

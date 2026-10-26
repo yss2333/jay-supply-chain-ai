@@ -4,6 +4,8 @@ What changed on this site, and when. Numbers move only when the measurement behi
 
 ## 2026
 
+**October 25** — A wording pass across the site: shorter sentences, fewer dashes, and no contrasts or closing lines that only repeated a point. No number, result, source or caveat changed. One count came out rather than being guessed: the supply-plan page said five kinds of file-format drift and named four. The repository is now jay-supply-chain-ai, and every page carries a share image and a canonical address for link previews.
+
 **October 25** — One result is new: store in-stock held above 94% every week from July to October 2026 across seven major accounts, against a 90% low over the same months of 2025. It sits next to the accuracy figure on the home page, the system page and the README, with how it was measured and why I do not claim all of it. The accuracy horizon is corrected: continuing items are scored three months ahead, October against the July forecast, not four months as the October 17 entry said. The name at the top now reads Jay (Sejun) Song, as on my resume.
 
 **October 20** — The planning-backorder figure now compares the second and third quarters of 2026 with the same quarters of 2025, in place of January to October. The system went live in January, and with a three-to-four-month lead time the first quarter still ran on orders placed before it. The −36% does not change. The new-product page now says the pitch placed the nail set with our second-largest retail account, in place of a second national retailer.

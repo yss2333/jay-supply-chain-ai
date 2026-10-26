@@ -17,7 +17,7 @@ Excess and obsolete (E&O) reporting for five plants in the US, Canada and Europe
 - **Excess across five plants.** Stock against forward demand, classified into four tiers, with product images so reviewers recognise items at a glance.
 - **A year-to-date view that keeps up by itself.** The window runs from January through the current month and rolls forward automatically. Each run compares itself with the previous one and explains what changed.
 - **Aging from receipt history,** over 2, 3 and 4-year windows, combined with excess and returns.
-- **One shared inventory builder behind both reports,** so their totals tie out by construction instead of by hope.
+- **One shared inventory builder behind both reports,** so their totals tie out by construction.
 - **Tiers agreed with the people who use them, and an aging standard that did not exist before.** The company already had a Power BI inventory report. I co-defined the excess tiers and implemented them in code, so both reports match the numbers management already reads. The 3-year aging standard was new: stock that had not moved in three years had never been counted as a list.
 
 ## Rules that came out of using it
@@ -34,4 +34,4 @@ Excess and obsolete (E&O) reporting for five plants in the US, Canada and Europe
 
 ## Run it
 
-A clean-room version on synthetic data: [notebook 03](https://github.com/yss2333/jay-supply-chain-ai/blob/main/system/notebooks/03_excess_and_aging.ipynb) — four excess tiers and 3-year aging, with a write-off list that keeps over-buys off it.
+A clean-room version on synthetic data: [notebook 03](https://github.com/yss2333/jay-supply-chain-ai/blob/main/system/notebooks/03_excess_and_aging.ipynb). It covers the four excess tiers and 3-year aging, with a write-off list that keeps over-buys off it.

@@ -24,7 +24,7 @@ In a three-fold backtest, adding seasonality cut the account's monthly weighted 
 
 ## Choosing by the right metric
 
-The goal was fewer back-orders, so the deciding metric was **shortfall**: how often, and by how much, the forecast came in under actual orders. WMAPE was not the deciding metric.
+The goal was fewer back-orders, so the deciding metric was **shortfall**, not WMAPE: how often, and by how much, the forecast came in under actual orders.
 
 | Version | Shortfall rate | Account WMAPE |
 |---|---|---|
@@ -32,7 +32,7 @@ The goal was fewer back-orders, so the deciding metric was **shortfall**: how of
 | Seasonal dips floored | 37.5% | 31.6% |
 | Completely flat | 35.7% | 52.6% |
 
-The flat version looked safest on shortfall *rate*. But its total shortfall in *units* went up, and overstock rose by about a third. Item-level orders here are lumpy, and the shortfall comes from those spikes, which flattening does not fix. Item-level orders also barely follow the account's seasonal curve. I chose the floored version: it keeps the autumn peak and stops the winter dips from starving items.
+The flat version looked safest on shortfall *rate*. But its total shortfall in *units* went up, and overstock rose by about a third. Item-level orders here are lumpy and barely follow the account's seasonal curve, and the shortfall comes from those spikes, which flattening does not fix. I chose the floored version: it keeps the autumn peak and stops the winter dips from starving items.
 
 ## Result
 

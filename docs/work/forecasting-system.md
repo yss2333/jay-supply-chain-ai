@@ -2,7 +2,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="../images/work/forecasting-system-dark.svg"><img alt="The forecasting system at a glance: weighted forecast error 35-45% down to 18-25%; weekly review 5 hours down to 2 per account; regions reviewed weekly 1 up to 3; run weekly by four product divisions." src="../images/work/forecasting-system.svg" width="100%"></picture>
 
-**Two parts of this have their own pages: [what the weekly job became](exception-based-planning.md) — how the work is organised now — and [handing it to teams that are not mine](handover-to-other-teams.md).**
+**Two parts of this have their own pages: [what the weekly job became](exception-based-planning.md) (how the work is organised now) and [handing it to teams that are not mine](handover-to-other-teams.md).**
 
 [My role](#my-role) · [The problem](#the-problem) · [How it is built](#how-it-is-built) · [Design decisions](#design-decisions) · [One item's trace](#one-items-trace) · [Results](#results) · [Limitations](#limitations)
 
@@ -135,7 +135,7 @@ The production system stays private. [A clean-room version](https://github.com/y
 
 ## Limitations
 
-- The accuracy figures are a range because they are a range: the spread across retailers, not a single number. Accounts with short histories or thin distribution sit at the wrong end of it.
+- The accuracy figures are a range because they are the spread across retailers. Accounts with short histories or thin distribution sit at the wrong end of it.
 - The measured window is 2026 Q1 with a six-month rolling backtest, on eight major domestic accounts. It is not a multi-year track record, and it does not cover every account the system reviews.
 - The backorder figure compares the same months of two years. The system went live in between, but the measure also counts procurement problems, so it shows the direction, not how much the system alone did.
 - The in-stock figure is the retailers' own shelf measure, and they run store replenishment. It shows the accuracy gain did not come from ordering less; it does not show that the system alone kept the shelves full.
@@ -143,4 +143,4 @@ The production system stays private. [A clean-room version](https://github.com/y
 
 ## What the output feeds
 
-The output is the forecast file, and the weekly review is the demand input to S&OP: its calls reach the review meeting with their reasons attached, not just the numbers.
+The output is the forecast file, and the weekly review is the demand input to S&OP: its calls reach the review meeting with the numbers and the reasons behind them.

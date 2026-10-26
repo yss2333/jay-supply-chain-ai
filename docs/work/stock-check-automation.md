@@ -19,7 +19,7 @@ Two questions hide inside one stock check: can we cover this item over the next 
 
 - **One extract, one source.** A single query returns stock and every future supply and demand event per item and plant; the back-order tools and the [supplier coverage reports](dashboards.md) call it too, so a fix lands everywhere.
 - **Three balances, all shown:** everything the ERP shows; everything but planned orders and requisitions; and confirmed only, meaning real orders and confirmed inbound. Judgment uses confirmed.
-- **Two separate answers:** coverage over six months, or one named month when that is all the account asked, and [allocation](allocation.md) — full, partial or out — from physical on-hand only.
+- **Two separate answers:** coverage over six months, or one named month when that is all the account asked, and [allocation](allocation.md) (full, partial or out) from physical on-hand only.
 - **A back-in-stock date when coverage fails:** the first confirmed inbound after today, plus three days for a shipment already notified or seven for a purchase order not yet shipped. With neither, it says so rather than guess.
 - **An email hand-off:** scan the last 72 hours, match the subject, identify the account, save the attachment, run the check, with duplicates blocked three ways.
 

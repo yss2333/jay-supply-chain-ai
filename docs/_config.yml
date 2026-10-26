@@ -3,6 +3,10 @@ description: >-
   Supply chain analytics and applied AI. Demand forecasting systems for 20+ retail
   accounts, and the validation process that decides whether their numbers are real.
 lang: en
+url: https://yss2333.github.io
+baseurl: /jay-supply-chain-ai
+plugins:
+  - jekyll-sitemap
 
 markdown: kramdown
 kramdown:

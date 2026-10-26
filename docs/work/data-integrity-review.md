@@ -8,11 +8,11 @@ A weekly review at one account looked normal until one integrity check failed. T
 
 ## The problem
 
-The review was producing confident calls — raise this, cut that — on numbers nobody had checked that week. Every input looked plausible on screen. The failure mode of a system like this is not an error message; it is a decision that is quietly wrong, repeated across hundreds of items.
+The review was producing confident calls (raise this, cut that) on numbers nobody had checked that week. Every input looked plausible on screen. A system like this fails without an error message: it makes a wrong decision and repeats it across hundreds of items.
 
 ## The check that caught it
 
-Before reading any item, I check a few things that must be true of the data itself. One of them: every active item should have a syndicated ranking figure. That week the count came back **0 of 225**. A single line, and it said the inputs were wrong before any judgment was made.
+Before reading any item, I check a few things that must be true of the data itself. One of them: every active item should have a syndicated ranking figure. That week the count came back **0 of 225**. That one line showed the inputs were wrong before any judgment was made.
 
 ## The three defects
 
@@ -22,15 +22,15 @@ Before reading any item, I check a few things that must be true of the data itse
 
 **3. Stale weeks averaged in as zeros.** Weeks where the retailer had not yet posted data were being included in averages as zero rather than skipped, dragging the four-week trend down by about 17%.
 
-Each one is small. Together they made the system read a healthy account as a collapsing one.
+Each one is small, but together they made the system read a healthy account as a collapsing one.
 
 ## What changed after the fix
 
 - **Demand estimate against actual sell-through: 0.21 → 0.91.** The estimate had been reading about a fifth of real demand.
 - **79 items changed decision.** Cuts that would have been made on false weakness stopped being made.
-- The two correction factors multiplied out to 5.17, against a theoretical 5.16 — they tied out, which is how I knew the fix was the right size rather than a lucky patch.
+- The two correction factors multiplied out to 5.17, against a theoretical 5.16. They tied out, which is how I knew the fix was the right size rather than a lucky patch.
 - The other data path, the one that had been correct, came through unchanged: no side effects.
-- Total forecast moved **−0.2%**. Almost nothing in aggregate, and almost everything at the item level. That gap is the whole point.
+- Total forecast moved **−0.2%**: almost nothing in aggregate, and almost everything at the item level.
 
 ## What I changed in how I work
 
@@ -41,4 +41,4 @@ Each one is small. Together they made the system read a healthy account as a col
 
 ## Limitations
 
-This was one account in one week. The checks now run everywhere, but I cannot claim the same size of error elsewhere — the point is that nobody knew this one was there either. And integrity checks only cover the failures I have already imagined; the next defect will be a different shape.
+This was one account in one week. The checks now run everywhere, but I cannot claim errors of the same size elsewhere. I can only say that nobody knew this one was there either. And integrity checks only cover the failures I have already imagined; the next defect will be a different shape.

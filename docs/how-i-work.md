@@ -1,6 +1,6 @@
 # How I decide a number is real
 
-Most of what I build is a judgment about demand, and most arguments about demand turn out to be arguments about evidence. This page is the part of my work that does not change from project to project.
+Most of what I build is a judgment about demand, and most arguments about demand turn out to be arguments about evidence. How I weigh that evidence is the part of my work that does not change from project to project.
 
 ## Four stages, four different questions
 
@@ -15,17 +15,17 @@ Each stage is a command in the [clean-room system](https://github.com/yss2333/ja
 
 ## Always against a baseline
 
-A forecast is not judged against zero. It is judged against what you would have got for free.
+A forecast is judged against what you would have got for free.
 
 - **Naive**: next week equals last week. If a method cannot beat that, it has not earned its complexity.
 - **The incumbent**: whatever we run today.
-- **Forecast value added**: the gain over the naive forecast, in points. Negative value added is a finding, not a failure to hide — it is how you learn that a human touch, or a model, is making things worse.
+- **Forecast value added**: the gain over the naive forecast, in points. Negative value added is a finding, not a failure to hide. It is how you learn that a human touch, or a model, is making things worse.
 
 ## The metric comes from the question
 
 - Asking about the **shape** of a season? That is correlation. But correlation cannot see level: a forecast uniformly 20% too low still scores a perfect 1.00.
 - Asking about **quantity**? That is WMAPE. But WMAPE cannot see direction: it prices a stockout and an overstock identically, and the business does not.
-- Asking about **service**? Then it is fill rate and the shortfall against confirmed orders — read next to inventory, because you can always buy a better fill rate by holding more stock.
+- Asking about **service**? Then it is fill rate and the shortfall against confirmed orders, read next to inventory, because you can always buy a better fill rate by holding more stock.
 - Asking about **money**? Then someone in finance has to recognise the number, which usually means it is smaller and slower than the model says.
 
 ## The decision log
@@ -61,4 +61,4 @@ REFUTE    "demand fell" — not supported. Flat sell-through with
 VERDICT   HOLD · forecast unchanged · buffer applied
 ```
 
-Most of what the system produces is a non-event like this one, which is the point.
+Most of what the system produces is, by design, a non-event like this one.

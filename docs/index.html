@@ -9,9 +9,16 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Jay (Sejun) Song — Supply Chain Analytics &amp; Applied AI">
 <meta property="og:description" content="Forecast error nearly halved in backtests. The hard part was proving it.">
-<meta name="twitter:card" content="summary">
+<meta property="og:url" content="https://yss2333.github.io/jay-supply-chain-ai/">
+<meta property="og:image" content="https://yss2333.github.io/jay-supply-chain-ai/images/share-card.png">
+<meta property="og:image:width" content="2400">
+<meta property="og:image:height" content="1260">
+<meta property="og:image:alt" content="Jay (Sejun) Song, supply chain analytics and applied AI: forecast error 35-45% to 18-25% in backtests, planning backorders down 36%, on-time in-full 84% to 98%.">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Jay (Sejun) Song — Supply Chain Analytics &amp; Applied AI">
 <meta name="twitter:description" content="Forecast error nearly halved in backtests. The hard part was proving it.">
+<meta name="twitter:image" content="https://yss2333.github.io/jay-supply-chain-ai/images/share-card.png">
+<link rel="canonical" href="https://yss2333.github.io/jay-supply-chain-ai/">
 <meta name="theme-color" content="#EDF0EE" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121614" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23131816'/%3E%3Cpath d='M9 8v16M23 8v16' stroke='%23EDF0EE' stroke-width='2.5'/%3E%3Cpath d='M9 16h14' stroke='%23EDF0EE' stroke-width='1.5' stroke-dasharray='2.5 2'/%3E%3C/svg%3E">
@@ -68,7 +75,7 @@
 
   <h1>I am a demand planner who builds the forecasting systems I plan with.</h1>
 
-  <p class="lede">In backtests on our eight major accounts, we nearly halved weighted forecast error, in a system that now reviews 20+. Since it went live, the share of sales orders backordered for planning reasons is down 36%.</p>
+  <p class="lede">In backtests on our eight major accounts, we nearly halved weighted forecast error with a system that now reviews every account weekly. Since it went live, the share of sales orders backordered for planning reasons is down 36%.</p>
 
   <p class="subhead">I have planned demand at Kiss Beauty Group since January 2024. I started with six US and UK accounts, and today I cover <span class="val">20+</span> retail accounts across the US, Canada and Europe, about <span class="val">1,400</span> nail SKUs. I run the weekly review, and I co-built the system that runs it. My part was the agent architecture, the business rules and guardrails, the data integration, and the MCP server the agents run on.</p>
 
@@ -189,7 +196,7 @@
     <a class="pick" href="work/forecasting-system.html">
       <span class="label">The system</span>
       <h3>Forecast error nearly halved in backtests, and three regions reviewed weekly</h3>
-      <p>A seasonality layer, a rule engine with asymmetric guardrails, and an agent that argues with its own findings. What each piece does, and why it sits where it does.</p>
+      <p>How a seasonality layer, a rule engine with asymmetric guardrails and an agent that argues with its own findings fit together, and why each sits where it does.</p>
       <span class="read">Read the write-up &rarr;</span>
     </a>
     <a class="pick" href="work/exception-based-planning.html">
@@ -277,9 +284,9 @@
     <span class="label">What the clean-room version produces &middot; all of it on synthetic data</span>
     <div class="gal-grid">
       <figure><img src="images/system/planted_scenarios.png" alt="Six planted scenarios and the action the review returned for each." loading="lazy" width="2036" height="1163"><figcaption><b>Six planted scenarios.</b> A supply gap, a promotion sitting in the baseline, a bulk order, a new item. Each one tests a single rule, and the expected verdict is written down before the run.</figcaption></figure>
-      <figure><img src="images/system/backtest.png" alt="Backtest comparing naive, flat and seasonal forecast error by retailer." loading="lazy" width="1653" height="721"><figcaption><b>A pre-registered backtest.</b> The seasonal curve is adopted only where it beats flat by a margin fixed in advance &mdash; which is not everywhere.</figcaption></figure>
+      <figure><img src="images/system/backtest.png" alt="Backtest comparing naive, flat and seasonal forecast error by retailer." loading="lazy" width="1653" height="721"><figcaption><b>A pre-registered backtest.</b> The seasonal curve is adopted only where it beats flat by a margin fixed in advance, and in some places it does not.</figcaption></figure>
       <figure><img src="images/system/excess_tiers.png" alt="Stock value by tier, with and without the date-filter bug." loading="lazy" width="1689" height="589"><figcaption><b>The same stock, two answers.</b> What one date rule does to reported excess, and why the report had to be rebuilt before anyone acted on it.</figcaption></figure>
-      <figure><img src="images/system/leak_fingerprint.png" alt="Share of forecasts landing within five percent of actual, leaked model versus clean model." loading="lazy" width="1783" height="622"><figcaption><b>A leak has a fingerprint.</b> How often a forecast lands within 5% of actual. A model that knows the answer is too accurate in a way honest models never are.</figcaption></figure>
+      <figure><img src="images/system/leak_fingerprint.png" alt="Share of forecasts landing within five percent of actual, leaked model versus clean model." loading="lazy" width="1783" height="622"><figcaption><b>A leak has a fingerprint.</b> How often a forecast lands within 5% of actual. A model that has seen the answer lands that close far more often than a clean one.</figcaption></figure>
     </div>
   </div>
 

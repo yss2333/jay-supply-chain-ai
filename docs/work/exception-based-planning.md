@@ -6,13 +6,13 @@
 
 ## The problem
 
-A weekly forecast review used to mean opening four things — point-of-sale, shipments, the current forecast, the retailer's own file — and reconciling them by hand, item by item, account by account.
+A weekly forecast review used to mean opening four things (point-of-sale, shipments, the current forecast, the retailer's own file) and reconciling them by hand, item by item, account by account.
 
-Two problems, and the second is the expensive one.
+That had two problems, and the second was the expensive one.
 
 It was slow: one account took about five hours a week, more than the team could give 20-plus accounts every week, so Canada and Europe were reviewed monthly or skipped.
 
-And it was **not reproducible**. Two planners could look at the same item and reach different conclusions, both defensible, because the judgment had never been written down. It lived in each person's head, where it could not be questioned, compared or improved. A forecast you cannot explain is a forecast you cannot argue with — including when it is wrong.
+And it was **not reproducible**. Two planners could look at the same item and reach different conclusions, both defensible, because the judgment had never been written down. It lived in each person's head, where it could not be questioned, compared or improved. If nobody can explain a forecast, nobody can argue with it, even when it is wrong.
 
 ## What changed
 
@@ -37,22 +37,22 @@ The system is built to stop, and where it stops was decided in advance rather th
 - **A consistency guard** rejects decisions whose direction and number disagree.
 - **Every output is versioned**, so any decision can be traced back to what it saw.
 
-The phrase the team uses is that the system proposes and the planner disposes. That is a design constraint, not a disclaimer.
+The phrase the team uses is that the system proposes and the planner disposes. It is a constraint built into the design.
 
 ## Does reviewing less mean missing more?
 
-This is the right question to ask, and the answer is no — because **the coverage did not shrink.**
+No, because **the coverage did not shrink.**
 
 Every item is still reviewed every cycle. What changed is who reviews it. The rules review all of them; a person looks at the share the rules could not settle.
 
-It is worth being honest about what the old way actually delivered. A planner spreading attention evenly across hundreds of lines was not giving each line equal attention — the lines near the end of the list got less. Now attention is concentrated where the uncertainty is. What was automated is the volume, not the judgment.
+The old way had a gap of its own. A planner spreading attention evenly across hundreds of lines was not giving each line equal attention: the lines near the end of the list got less. Now attention is concentrated where the uncertainty is. What was automated is the volume, not the judgment.
 
 ## The same method, twice
 
 The [freight routing tool](shipping-route-automation.md) was built the same way, for a different decision: every line of a supplier's shipping plan is judged against the destination's own transit time, and a buyer sees the roughly 7% the rules cannot settle.
 
-Two problems, one method — write the judgment down, let the rules handle what they can settle, and put a person on what they cannot. Writing it down is what makes it arguable, and being arguable is what makes it improvable.
+Both problems got the same method: write the judgment down, let the rules handle what they can settle, and put a person on what they cannot. Once the judgment is written down, people can argue with it, and that is how it improves.
 
 ## What I cannot show here
 
-How much of the improvement came from the process change rather than the new rules and agents. Both landed in the same period, and I have no clean way to separate them. The accuracy numbers on [the forecasting system](forecasting-system.md) are measured; the claim on this page is about how the work is organised, and it is stated as such.
+How much of the improvement came from the process change rather than the new rules and agents. Both landed in the same period, and I have no clean way to separate them. The accuracy numbers on [the forecasting system](forecasting-system.md) are measured; the claim on this page is about how the work is organised.

@@ -2,13 +2,13 @@
 
 Most of the order and shipment numbers on this site are read from one place: the order master data I built in Python on Snowflake.
 
-It started as plumbing for something else. The planning platform we used needed order history to model against, and that history lived in per-plant, per-year extracts that I was pasting together by hand every month. Building it properly turned a monthly chore into a weekly refresh — and once the data existed, things could be built on top of it that were not worth attempting before, including [the order trend dashboard](order-trend-dashboard.md) that other teams now use.
+It started as plumbing for something else. The planning platform we used needed order history to model against, and that history lived in per-plant, per-year extracts that I was pasting together by hand every month. Building it properly turned a monthly chore into a weekly refresh. Once the data existed, things could be built on top of it that were not worth attempting before, including [the order trend dashboard](order-trend-dashboard.md) that other teams now use.
 
 ## The problem
 
 The data a demand planner needs arrives in pieces: shipment plans and actual shipments from the ERP, orders and back-orders from the sales ledger, point-of-sale and store in-stock from each retailer, syndicated rankings from a market data provider, inventory and open supply from the material planning system.
 
-Each lives somewhere else, in a different shape, on a different schedule. The practical effect is that nobody asks the second question. You pull a report to answer one thing, and the follow-up — is this account different from the others, is this month different from last year — costs another afternoon, so it does not get asked.
+Each lives somewhere else, in a different shape, on a different schedule. The practical effect is that nobody asks the second question. You pull a report to answer one thing, and the follow-up, such as whether this account differs from the others or this month from last year, costs another afternoon, so it does not get asked.
 
 ## Constraints
 
@@ -22,13 +22,13 @@ Each lives somewhere else, in a different shape, on a different schedule. The pr
 - **Order master data on Snowflake, in Python.** Order lines from every plant and year joined into one history, with the material master, purchase prices and store counts attached.
 - **Retailer feeds normalised on the way in**: identifier mapping, weekly-to-monthly conversion where a retailer plans in weeks and we plan in months, and channel rules for how each account reports in-stock.
 - **Defensive parsers.** Files that change shape are detected and either handled or refused loudly. A silent empty table is the failure that costs a week ([what that looks like](data-integrity-review.md)).
-- **One builder, reused.** The excess and aging reports share a single inventory builder, so their totals tie out by construction rather than by hope.
+- **One builder, reused.** The excess and aging reports share a single inventory builder, so their totals tie out by construction.
 
 ## What it made possible
 
 - The [forecasting system](forecasting-system.md) reads one merged view per item and account instead of three files.
 - [Excess and aging reporting](inventory-health-reporting.md) across five plants runs on a schedule instead of being rebuilt by hand.
-- Questions that used to be projects — a customer's plan against the orders that landed, a region's back-orders by cause — became [a report](supply-plan-vs-orders.md) someone can re-run in minutes.
+- Questions that used to be projects (a customer's plan against the orders that landed, a region's back-orders by cause) became [a report](supply-plan-vs-orders.md) someone can re-run in minutes.
 - The same models feed [the dashboards](order-trend-dashboard.md) other teams use, so planning and reporting stop arguing about whose number is right.
 
 ## What it comes to

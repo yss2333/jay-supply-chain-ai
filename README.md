@@ -14,8 +14,8 @@ I have planned demand at Kiss Beauty Group since January 2024. I started with si
 
 | | |
 |---|---|
-| **Read the work** → [`docs/`](docs/) | 19 write-ups. Each leads with the outcome and states the definition behind every number. Start with [the forecasting system](docs/work/forecasting-system.md), then [what the weekly job became](docs/work/exception-based-planning.md). |
-| **Run the system** → [`system/`](system/) | A clean-room rebuild on synthetic data: rule engine, review agents, an MCP tool server, six Jupyter notebooks, 31 tests. |
+| **Read the work:** [`docs/`](docs/) | 19 write-ups. Each leads with the outcome and states the definition behind every number. Start with [the forecasting system](docs/work/forecasting-system.md), then [what the weekly job became](docs/work/exception-based-planning.md). |
+| **Run the system:** [`system/`](system/) | A clean-room rebuild on synthetic data: rule engine, review agents, an MCP tool server, six Jupyter notebooks, 31 tests. |
 
 Also: [how I decide a number is real](docs/how-i-work.md) · [about](docs/about.md) · [what changed and when](docs/changes.md)
 
@@ -49,7 +49,7 @@ Also: [how I decide a number is real](docs/how-i-work.md) · [about](docs/about.
   <img alt="Signals feed a seasonality layer and a rule engine; flagged items go to an investigator agent, then a refuter agent, then a planner. New items get a starting curve from a vision model that reads each item's color." src="docs/images/system-flow.svg" width="100%">
 </picture>
 
-Cutting and raising follow deliberately different rules, because the two ways to be wrong do not cost the same. An agent investigates what the rules flag; a second agent is told only to disprove it; a refuted change does not ship. [The full write-up](docs/work/forecasting-system.md) · [how I decide a number is real](docs/how-i-work.md)
+Cutting and raising follow deliberately different rules, because the two ways to be wrong do not cost the same. An agent investigates what the rules flag, and a second agent is told only to disprove it. A refuted change does not ship. [The full write-up](docs/work/forecasting-system.md) · [how I decide a number is real](docs/how-i-work.md)
 
 **Interactive diagrams** of the clean-room version: click through guided views, trace routes, search nodes. The images are still frames; each diagram is one self-contained HTML file you can download and open in a browser.
 
@@ -96,7 +96,7 @@ Cutting and raising follow deliberately different rules, because the two ways to
 
 ## What the clean-room version produces
 
-Everything below runs on synthetic data, from [`system/`](system/README.md). Same design as production, none of its data.
+Everything below runs on synthetic data from [`system/`](system/README.md), which follows the production design and uses none of its data.
 
 | | |
 |---|---|
