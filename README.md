@@ -55,13 +55,13 @@ Cutting and raising follow deliberately different rules, because the two ways to
 
 ### The clean-room system map
 
-<!-- Restore when the site is published: [Open interactive](https://yss2333.github.io/jay-supply-chain-ai/diagrams/system-map.html) · -->[HTML source](docs/diagrams/system-map.html)
+[Open interactive](https://yss2333.github.io/jay-supply-chain-ai/diagrams/system-map.html) · [HTML source](docs/diagrams/system-map.html)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="docs/images/diagrams/system-map-dark.png"><img alt="Clean-room system map: synthetic data, signals, seasonality, rule engine, investigator, refuter and planner in a row, with the MCP server and sub-agents above and validation and an optional LLM below." src="docs/images/diagrams/system-map.png" width="100%"></picture>
 
 ### How one item is decided
 
-<!-- Restore when the site is published: [Open interactive](https://yss2333.github.io/jay-supply-chain-ai/diagrams/review-decision.html) · -->[HTML source](docs/diagrams/review-decision.html)
+[Open interactive](https://yss2333.github.io/jay-supply-chain-ai/diagrams/review-decision.html) · [HTML source](docs/diagrams/review-decision.html)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="docs/images/diagrams/review-decision-dark.png"><img alt="How one item is decided: a flagged item goes to a raise path that needs a second signal, a cut path with guards, or a shipment-swing hold; all go to an investigator and a refuter before settling." src="docs/images/diagrams/review-decision.png" width="100%"></picture>
 
