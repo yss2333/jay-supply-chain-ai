@@ -4,7 +4,7 @@ What changed on this site, and when. Numbers move only when the measurement behi
 
 ## 2026
 
-**October 26** — The work history now describes the freight tool the way my resume does: freight-routing automation that selects each line's freight mode. No figures changed.
+**October 26** — The work history now describes the freight tool the way my resume does: freight-routing automation that selects each line's freight mode. My current role now leads with my official title, Demand Planning Specialist, as on my resume. No figures changed.
 
 **October 25** — A wording pass across the site: shorter sentences, fewer dashes, and no contrasts or closing lines that only repeated a point. No number, result, source or caveat changed. One count came out rather than being guessed: the supply-plan page said five kinds of file-format drift and named four. The repository is now jay-supply-chain-ai, and every page carries a share image and a canonical address for link previews.
 
