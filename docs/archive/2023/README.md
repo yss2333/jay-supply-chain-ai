@@ -4,48 +4,6 @@ The projects from Penn State and 2023 that still shape how I work, most relevant
 
 ---
 
-## Boeing case competition
-
-![Boeing Business Case Competition 2022](img/boeing-case-cover.png)
-
-**Penn State × Boeing, fall 2022.** A team competition: working as consultants on a contract problem, presented to a panel of Boeing judges.
-
-### The brief
-
-Boeing expected a contract from the German Ministry of Defense, worth over $6 billion, for 60 Chinook helicopters with training and support, alongside ongoing U.S. Army orders.
-
-- **Germany:** 60 helicopters by 2035, no more than 10 a year, at an average price no higher than $70M
-- **U.S. Army:** 15 to 25 helicopters a year at a base price of $45M, accepting up to 5% annual increases
-- **Costs:** materials rising 5% a year after 2023, labor 3.5% a year
-- **Constraint:** the transmission is the longest-lead component
-- **Asked for:** a delivery plan that balances customer needs with profit, a way to manage inflation, a decision on a $10M investment to cut production lead time, return on sales and NPV, and supplier engagement
-
-### What we did
-
-- **Priced each customer year by year**, 2023 to 2035: revenue, cost of goods, labor, profit per unit and return on sales under several annual price-escalation rates (for example 5% against 4.8% for the U.S.), weighing profit against the customer relationship.
-- **Tested the $10M lead-time investment against Germany's price ceiling:**
-
-| Germany | Lead time | Deliveries | Escalation that fits the ceiling | Return on sales | Profit, undiscounted |
-|---|---|---|---|---|---|
-| Without the investment | 40 months | 2026–2031 | 4.43% a year | slides from 15% to 12–13% | $569M |
-| With the $10M investment | 30 months | 2025–2030 | 4.8% a year | holds at 15% | $622M |
-
-- **Laid out the production pipeline period by period** under the shorter lead time: units started, in process at each stage, and delivered.
-- **Timed an advance purchase of the transmission.** Modeled cost of goods with and without buying early, with an offset that starts as a small premium and turns into a saving. 2024 came out as the best year to buy: a premium in the first years, then lower unit cost every year after (from 2026 on the U.S. contract, 2027 on the German one).
-- **Discounted the plan:** present value of profit across both customers, at a 15% return on sales.
-
-### Recommendation
-
-Invest the $10M in 2023, buy the transmission in advance in 2024, and meet both customers' requirements at a stable margin.
-
-### Where it shows up now
-
-Lead time against cost is the trade-off the [freight mode selection](../../work/shipping-route-automation.md) rules settle on every line: pay for speed only where coverage says you have to, and secure the long-lead item before it becomes the constraint.
-
-[Team presentation (PDF)](docs/boeing-case-competition.pdf)
-
----
-
 ## Stock price forecasting
 
 **Team project ("Team Big-Man"), August–October 2023.** Forecast the next day's adjusted closing price for any U.S.-listed company, given its ticker. The worked example used NVIDIA, from 2013 on.

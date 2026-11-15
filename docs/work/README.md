@@ -10,10 +10,10 @@ Accounts are named where the work being described is my own planning, and left a
 
 | | What it is | Result |
 |---|---|---|
-| ★ | [The forecasting system](forecasting-system.md) | Weighted forecast error 35–45% → 18–25% in backtests; review 5h → 2h per account; three regions on a weekly cadence; planning-related backorders down 36% since it went live; store in-stock averaging 95.9% from July to October |
+| ★ | [The forecasting system](forecasting-system.md) | Weighted forecast error 35–45% → 18–25%, live forecasts against the prior method; review 5h → 2h per account; three regions on a weekly cadence; planning-related backorders down 36% since it went live; store in-stock averaging 95.9% from July to October |
 | ★ | [What the weekly job became](exception-based-planning.md) | Every item still reviewed — by rules; a planner takes what the rules could not settle. Monthly cadence → weekly |
 | ★ | [Handing the system to teams that are not mine](handover-to-other-teams.md) | Four product divisions: 15+ people in their purchasing and supply chain teams, weekly, configured by them, not run by me |
-| | [Forecasting new products before they sell](new-product-introduction.md) | The cross-retailer forecast that supported a pitch placing a top-selling nail set with our second-largest retail account; NPI forecasting for 178 new items across 380+ launches; launch-window rules that stop early cuts |
+| | [Forecasting new products before they sell](new-product-introduction.md) | 380+ new-item launches at eight retailers in the US, Canada and the UK, forecast from attribute-matched analog items; launch-window rules that stop early cuts |
 | | [Rebuilding the review rules](fc-review-overhaul.md) | A certainty gate on cuts, a floor at the selling rate and tiered ceilings; six accounts re-validated |
 | | [Fix the data before you judge the item](data-integrity-review.md) | Three data defects; demand estimates went from 0.21 to 0.91 of actual; 79 items' decisions changed |
 | | [Measuring forecast accuracy at all](forecast-accuracy-measurement.md) | The monthly exception report that scores every item's shipments against its forecast |
@@ -52,7 +52,7 @@ Accounts are named where the work being described is my own planning, and left a
 
 ## Earlier work
 
-[Boeing case competition, stock price forecasting and labor market research, 2022–2023](../archive/2023/README.md) — the statistics degree, and the parts of it I still use.
+[Stock price forecasting and labor market research, 2022–2023](../archive/2023/README.md) — the statistics degree, and the parts of it I still use.
 
 ## Runnable
 

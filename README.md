@@ -1,10 +1,10 @@
-# Jay (Sejun) Song
+# Jay Song
 
 **Supply Chain Analytics & Applied AI** · CPG beauty · US / Canada / Europe
 
 > I am a demand planner who builds the forecasting systems I plan with.
 
-I have planned demand at Kiss Beauty Group since January 2024. I started with six US and UK accounts, and today I cover 20+ retail accounts across the US, Canada and Europe, about 1,400 nail SKUs. I co-built the agentic AI planning system we run on now. My part was the agent architecture, the business rules and guardrails, the data integration, and the MCP server the agents run on. In backtests it nearly halved weighted forecast error, and since it went live in January 2026 the share of sales orders backordered for planning reasons is down 36%. It placed third of 24 teams in the company-wide AI Awards 2026.
+I have planned demand at Kiss Beauty Group since January 2024. I started with six US and UK accounts, and today I cover 20+ retail accounts across the US, Canada and Europe, about 1,400 nail SKUs. I co-built the agentic AI planning system we run on now. My part was the agent architecture, the business rules and guardrails, the data integration, and the MCP server the agents run on. Its live forecasts nearly halved weighted forecast error against our prior method, re-run on the same months, and since it went live in January 2026 the share of sales orders backordered for planning reasons is down 36%. It placed third of 24 teams in the company-wide AI Awards 2026.
 
 **Email:** [jaysejunsong@gmail.com](mailto:jaysejunsong@gmail.com) · **LinkedIn:** [jay-sejun-song](https://www.linkedin.com/in/jay-sejun-song)
 
@@ -31,7 +31,7 @@ Also: [how I decide a number is real](docs/how-i-work.md) · [about](docs/about.
 
 | Result | Value | Definition, window and caveat |
 |---|---|---|
-| Weighted forecast error | 35–45% → 18–25% | WMAPE, volume-weighted by shipment units · Σ\|actual − forecast\| ÷ Σ\|actual\| · eight major domestic accounts · existing items · 2026 Q1, validated on a six-month rolling backtest · the range is the spread across retailers, not uncertainty |
+| Weighted forecast error | 35–45% → 18–25% | WMAPE, volume-weighted by shipment units · Σ\|actual − forecast\| ÷ Σ\|actual\| · eight major domestic accounts · continuing items; new items are planned through S&OP · the system's live forecasts, each scored three months after it was made (first-quarter forecasts on second-quarter shipments, second-quarter on third), against the prior method, a six-month rolling average of shipments, re-run on the same months · the gap held against retailer orders as well as shipments · the range is the spread across retailers, not uncertainty |
 | Weekly forecast review | 5 h → 2 h per account | ≈60% less time per account review · ≈3,100 hrs/yr of capacity across the team (≈1.5 FTE): 3 hours a week × 20 accounts × 52 weeks · an estimate of what a weekly review of every account would have cost, since Canada and Europe were reviewed monthly or skipped before |
 | Coverage | 1 region → 3, weekly | the US, Canada and Europe · review throughput ≈4× (monthly → weekly), filling a capacity gap without a new hire |
 | Recurring software cost | −$26,517 / yr | 88% lower: a third-party planning platform's $30,117/yr license, now retired, less $3,600/yr for the in-house system · a realized saving |
@@ -73,7 +73,7 @@ Cutting and raising follow deliberately different rules, because the two ways to
 - [What the weekly job became](docs/work/exception-based-planning.md) — rules settle what they can, a person takes the rest
 - [Allocation when supply is short](docs/work/allocation.md) — on-time-in-full 84% → 98% on the retailer's own scorecard
 - [Handing the system to teams that are not mine](docs/work/handover-to-other-teams.md) — four product divisions, 15+ people, weekly, without me
-- [Forecasting new products before they sell](docs/work/new-product-introduction.md) — the cross-retailer forecast that supported a pitch placing a top-selling nail set with our second-largest retail account; 178 new items across 380+ launches
+- [Forecasting new products before they sell](docs/work/new-product-introduction.md) — 380+ new-item launches at eight retailers in the US, Canada and the UK
 - [Rebuilding the review rules](docs/work/fc-review-overhaul.md) · [Fix the data before you judge the item](docs/work/data-integrity-review.md)
 - [Measuring forecast accuracy at all](docs/work/forecast-accuracy-measurement.md) · [From R to Python to a forecast engine](docs/work/forecast-automation-engine.md)
 
@@ -90,7 +90,7 @@ Cutting and raising follow deliberately different rules, because the two ways to
 - [Dashboards for vendors, retailers and the warehouse](docs/work/dashboards.md)
 - [From SAP to Snowflake](docs/work/data-platform.md)
 
-**Earlier work (2022–2023)** — [Boeing case competition, stock price forecasting, labor market research](docs/archive/2023/README.md)
+**Earlier work (2022–2023)** — [stock price forecasting, labor market research](docs/archive/2023/README.md)
 
 [All write-ups, with results →](docs/work/README.md)
 

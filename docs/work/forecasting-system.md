@@ -6,7 +6,7 @@
 
 [My role](#my-role) · [The problem](#the-problem) · [How it is built](#how-it-is-built) · [Design decisions](#design-decisions) · [One item's trace](#one-items-trace) · [Results](#results) · [Limitations](#limitations)
 
-**In backtests on our eight major domestic accounts, weighted forecast error fell from 35–45% to 18–25%. The weekly review went from about 5 hours to 2 per account, and coverage from one region to three, filling a capacity gap without a new hire.** Since the system went live in January 2026, the share of sales orders backordered for planning reasons is down 36%. Store in-stock averaged 95.9% from July to October 2026, against a 90% low over the same months of 2025. An agentic AI planning system for 20+ retail accounts across the US, Canada and Europe, about 1,400 nail SKUs. It placed third of 24 teams in the company-wide AI Awards 2026.
+**On our eight major domestic accounts, the system's live forecasts cut weighted forecast error to 18–25%, against 35–45% for the prior method re-run on the same months. The weekly review went from about 5 hours to 2 per account, and coverage from one region to three, filling a capacity gap without a new hire.** Since the system went live in January 2026, the share of sales orders backordered for planning reasons is down 36%. Store in-stock averaged 95.9% from July to October 2026, against a 90% low over the same months of 2025. An agentic AI planning system for 20+ retail accounts across the US, Canada and Europe, about 1,400 nail SKUs. It placed third of 24 teams in the company-wide AI Awards 2026.
 
 ## My role
 
@@ -100,7 +100,7 @@ Most of what the system produces is a non-event like this one, which is the poin
 <details markdown="1">
 <summary><b>How each number was measured</b></summary>
 
-- **Weighted forecast error** — WMAPE, volume-weighted by shipment units · Σ\|actual − forecast\| ÷ Σ\|actual\| · measured on our eight major domestic accounts, by retailer · existing items (spring launches excluded, fall resets included) · 2026 Q1, validated on a six-month rolling backtest · the range is the spread across retailers
+- **Weighted forecast error** — WMAPE, volume-weighted by shipment units · Σ\|actual − forecast\| ÷ Σ\|actual\| · measured on our eight major domestic accounts, by retailer · continuing items; new items are planned through S&OP · the system's live forecasts, planner calls on flagged items included, each scored three months after it was made: first-quarter forecasts against second-quarter shipments, second-quarter forecasts against the third · the prior method, a six-month rolling average of shipments, re-run on the same months with only the data available at the time · the gap held when scored against retailer orders as well as shipments · the range is the spread across retailers
 - **Weekly review** — ≈60% less time per account review · ≈3,100 hrs/yr of capacity across the team (≈1.5 FTE): 3 hours a week × 20 accounts × 52 weeks · an estimate of what a weekly review of every account would have cost, since Canada and Europe were reviewed monthly or skipped before
 - **Coverage** — the US, Canada and Europe · review throughput ≈4× (monthly → weekly)
 - **Software cost** — a third-party planning platform's $30,117/yr license, now retired, less $3,600/yr for the in-house system, 88% lower · a realized saving
@@ -136,7 +136,7 @@ The production system stays private. [A clean-room version](https://github.com/y
 ## Limitations
 
 - The accuracy figures are a range because they are the spread across retailers. Accounts with short histories or thin distribution sit at the wrong end of it.
-- The measured window is 2026 Q1 with a six-month rolling backtest, on eight major domestic accounts. It is not a multi-year track record, and it does not cover every account the system reviews.
+- The measured window is the system's first two quarters of live forecasts (scored April to September 2026), on eight major domestic accounts and continuing items. It is not a multi-year track record, and it does not cover every account the system reviews or new items.
 - The backorder figure compares the same months of two years. The system went live in between, but the measure also counts procurement problems, so it shows the direction, not how much the system alone did.
 - The in-stock figure is the retailers' own shelf measure, and they run store replenishment. It shows the accuracy gain did not come from ordering less; it does not show that the system alone kept the shelves full.
 - A rule engine encodes the exceptions someone has already seen. The next failure will be one nobody wrote a rule for, which is why the [integrity checks](data-integrity-review.md) and the [validation gate](../how-i-work.md) matter more than the rules do.

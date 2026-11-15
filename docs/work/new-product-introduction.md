@@ -1,8 +1,8 @@
 # Forecasting new products before they sell
 
-**I developed the cross-retailer sales velocity forecast that supported a pitch placing a nail set ranked No. 4 in sales at its launch retailer with our second-largest retail account**, scaling that forecast to the account's distribution. Across launches, I forecast 178 new items in 380+ retailer launches, and wrote the launch-window rules that stop the review system cutting a launch too early.
+**I forecast 380+ new-item launches at eight retailers in the US, Canada and the UK, projecting each item's first 12 months of demand from attribute-matched analog items** and building the launch plan with each retailer through collaborative planning (CPFR). I also wrote the launch-window rules that stop the review system cutting a launch too early.
 
-[The problem](#the-problem) · [How a launch is forecast](#how-a-launch-is-forecast) · [The forecast behind a new retailer](#the-forecast-behind-a-new-retailer) · [Launch-window rules](#launch-window-rules) · [Limitations](#limitations)
+[The problem](#the-problem) · [How a launch is forecast](#how-a-launch-is-forecast) · [Launch-window rules](#launch-window-rules) · [Limitations](#limitations)
 
 ## The problem
 
@@ -16,18 +16,12 @@ A new item has no sales history, so its forecast has to come from somewhere othe
 
 ## How a launch is forecast
 
-For each of the 178 new items and 380+ retailer launches, a launch forecast is store count × comparable items' weekly sell-through per store × weeks, shaped by a starting seasonal curve.
+For each of the 380+ retailer launches, a launch forecast is store count × comparable items' weekly sell-through per store × weeks, over the first 12 months, shaped by a starting seasonal curve.
 
-- **The retailer's planogram changes** say which items are added, kept or deleted, and when. They are an input the retailer sends us, along with other information retailers share; they are not something we plan together.
+- **The retailer's planogram changes** say which items are added, kept or deleted, and when. The launch plan built on them is then agreed with the retailer through collaborative planning (CPFR).
 - **Store counts**: how many of the retailer's stores will carry the item.
-- **Comparable items** are chosen by a planner, not by the system. Where the same item already sells at another retailer, its weekly sell-through per store is the strongest comparison available.
+- **Comparable (analog) items** are matched on attributes such as segment, color and design, and chosen by a planner, not by the system. Where the same item already sells at another retailer, its weekly sell-through per store is the strongest comparison available.
 - **A starting seasonal curve.** A vision model reads each new item's color from product images, and a fixed color-to-month table sets its starting curve until real sales replace it.
-
-## The forecast behind a new retailer
-
-A nail set ranked No. 4 in sales at the retailer that launched it. To pitch it to our second-largest retail account, I took its sales per store per week at the launch retailer and scaled that velocity to that account's store count. That forecast went into the sales team's pitch, and the account took the set.
-
-I then designed a regression model with shrinkage that scores each product attribute and each retailer's fit, so the same reasoning can reach items with no sales history anywhere. It is a design so far: a clean attribute table is the work it still needs.
 
 ## Launch-window rules
 
@@ -43,7 +37,6 @@ Backtested on 500 new-item cases over a 24-month lookback, false cuts fell from 
 
 ## Limitations
 
-- The pitch was the sales team's, and the retailer's decision had other inputs. My part was the forecast behind it.
 - The forecast is only as good as the comparable items a planner picks. The system does not choose them.
 - The color-to-season link is weak on existing items, which is why color only sets a new item's starting curve and is replaced by real sales as they arrive.
 - The EU false-cut rate of 12.5% is monitored, not solved, and 33 UK cases is too small a sample to conclude from.
