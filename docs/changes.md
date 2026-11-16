@@ -4,6 +4,8 @@ What changed on this site, and when. Numbers move only when the measurement behi
 
 ## 2026
 
+**November 16** — The work history now describes the on-time in-full result the way my resume does: by allocating short supply to fill high-priority orders complete. No figures changed.
+
 **November 15** — The accuracy figure now says how it was measured: the system's live forecasts against the prior method, a six-month rolling average of shipments, re-run on the same months with only the data available at the time. Each live forecast was scored three months after it was made, first-quarter forecasts against second-quarter shipments and second-quarter forecasts against the third, on continuing items. The earlier wording, a six-month rolling backtest that left out spring launches, described the method wrongly. The new-product page now covers 380+ launches at eight retailers in the US, Canada and the UK; the count of 178 items included retailers I did not plan for, so it came out, along with the cross-retailer pitch story. The current title reads Supply Chain Analyst (Demand Planning Specialist), the name reads Jay Song, and the Boeing case competition and military service are no longer listed.
 
 **November 2** — Store in-stock now reads as an average: 95.9% from July to October 2026 across seven major accounts, in place of "above 94%". The comparison stays the 90% low over the same months of 2025.
